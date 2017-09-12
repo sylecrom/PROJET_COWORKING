@@ -1,4 +1,4 @@
 ## IMAGES ET CHARTE GRAPHIQUE DU SITE
 
-exemples de site:
+référence de recherche :
   http://capsule.reimscoworking.fr/
