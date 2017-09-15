@@ -32,3 +32,25 @@ $(document).ready(function () {
     return false;
   });
 });
+
+/* modification de la barre de Navigation */
+$(document).ready(function () {
+  $(window).on("scroll", function () {
+    var wn = $(window).scrollTop();
+    if (wn > 120) {
+      $(".barreNavColor").css("background", "rgba(255,255,255,1)");
+    }
+    else {
+      $(".barreNavColor").css("background", "rgba(255,255,255,0)");
+    }
+  });
+});
+/* effet hide show sur section*/
+$(function(){
+            $(".effetHi").hide()
+            $(".row").hover(function(){
+              $(".effetHi").show()
+            })
+
+});
+

@@ -27,6 +27,7 @@ row {
 
 body {
     font-family: 'Exo', sans-serif;
+    width: 100%;
 }
 
 .title {
@@ -35,7 +36,8 @@ body {
 }
 
 .GrosTitre {
-    font-size: 4em;
+    font-size: 5vh;
+    font-size-adjust: 3vh;
     padding: 15px;
 }
 
@@ -50,7 +52,7 @@ body {
 
 img {
     padding: 15px;
-    width: 100%;
+    max-width: 20vh;
 }
 
 .logo {
@@ -62,55 +64,62 @@ img {
 }
 
 .ImageBan {
-    padding: 15px;
-    width: 50%;
+    padding: 95px 0;
+    max-width: 50vh;
 }
 
 
 /* SECTIONS */
 
 #banner {
-    background-color: #1fa597;
-    margin-top: 50px;
-    padding-bottom: 60px
+    background-color: #58c4b8;
+    margin-top: 0px;
+    padding-bottom: 60px;
+    min-height: 100vh;
 }
 
 #accueil {
     background-color: #fbfbfb;
     margin-top: 50px;
-    padding-bottom: 60px
+    padding-bottom: 60px;
+    min-height: 100vh;
 }
 
 #espace {
     background-color: #80cbc4;
     margin-top: 50px;
-    padding-bottom: 60px
+    padding-bottom: 60px;
+    min-height: 100vh;
 }
 
 #service {
     background-color: #fbfbfb;
     margin-top: 50px;
-    padding-bottom: 60px
+    padding-bottom: 60px;
+    min-height: 100vh;
 }
 
 #tarifs {
     background-color: #fbfbfb;
     margin-top: 50px;
-    padding-bottom: 60px
+    padding-bottom: 60px;
+    min-height: 100vh;
 }
 
 .mentions {
     background-color: #35383a;
     color: #f9a02e;
     text-align: center;
+    padding-top: 5px;
 }
 
 
 /* BARRE DE NAV "FIXED ON TOP" */
 
-.navbar-default {
-    background-color: rgba(248, 248, 248, 0.5);
-    border-color: #e7e7e7;
+.barreNavColor {
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
 }
 
 
