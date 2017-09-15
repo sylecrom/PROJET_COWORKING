@@ -205,12 +205,13 @@ img {
 
 #map {
     height: 300px;
-    max-width: 600px;
+    max-width: 100%;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
+    margin: 0 auto;
 }
 
 .footerfr {
@@ -218,10 +219,15 @@ img {
 }
 
 .formul {
-    padding: auto auto;
-    border-right: 2px solid rgba(35, 36, 41, 0.80);
+    text-align: center;
 }
 
-contactl {
-    margin: 0 auto;
+.infoform {
+    display: inline-block;
+    text-align: left;
+}
+
+.infocont {
+    display: inline-block;
+    text-align: left;
 }
