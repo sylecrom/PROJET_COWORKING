@@ -32,3 +32,12 @@ $(document).ready(function () {
     return false;
   });
 });
+/* effet hide show sur section*/
+$(function(){
+            $(".effetHi").hide()
+            $(".row").hover(function(){
+              $(".effetHi").show()
+            })
+
+});
+
