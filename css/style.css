@@ -1,0 +1,22 @@
+#map {
+    height: 300px;
+    max-width: 600px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.footerfr {
+    padding: 15px 30px;
+}
+
+.formul {
+    padding: auto auto;
+    border-right: 2px solid rgba(35, 36, 41, 0.80);
+}
+
+contactl {
+    margin: 0 auto;
+}
