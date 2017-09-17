@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Abel|Asap+Condensed|Exo|Josefin+Sans|Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- SCRIPT JAVASCRIPT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type='text/javascript' src='js/script.js'></script>
@@ -61,6 +63,18 @@
             </div>
 
         </div>
+    </div>
+    <!-- Bouton raccourcis -->
+    <div>
+        <button class="cn-button" id="cn-button">+</button>
+        <div class="cn-wrapper" id="cn-wrapper">
+            <ul>
+                <li><a href="mailto:jeremy.perrin09@gmail.com:"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                <li><a href="tel:+33662692402"><i class="fa fa-phone-square" aria-hidden="true"></i></a></li>
+                <li><a class="js-scrollTo" href="#contact"><i class="fa fa-address-book-o" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div id="cn-overlay" class="cn-overlay cn-overlay"></div>
     </div>
     <!-- ACCUEIL BANNIERE-->
     <section>
@@ -161,25 +175,37 @@
         </div>
     </section>
     <!-- FOOTER -->
-    <div class="container-fluid footerfr">
+    <section id="contact" class="container-fluid footerfr">
         <div class="row">
             <div class="col-md-6 col-sm-12 formul">
                 <div class="infoform">
-                    <form class "resa" action="/action_page.php" method="get">
-                        <input type="text" name="prénom" placeholder="prénom"><br>
-                        <input type="text" name="nom" placeholder="nom"><br>
-                        <input type="text" name="mail" placeholder="mail"><br>
-                        <textarea name="text" id="usertext" cols="30" rows="10" placeholder="Bonjour, je souhaiterais réserver une place..."></textarea>
+                    <div class="form-group stylefg">
+                        <label for="InputNom">Nom</label>
+                        <input type="text" class="form-control" id="InputNom" placeholder="Votre Nom">
+                      </div>
+                      <div class="form-group stylefg">
+                        <label for="InputPrenom">Prénom</label>
+                        <input type="password" class="form-control" id="InputPrenom" placeholder="Votre prénom">
+                      </div>
+                      <div class="form-group stylefg">
+                        <label for="InputEmail1">Adresse email</label>
+                        <input type="email" class="form-control" id="InputEmail1" placeholder="email@internet.com">
+                      </div>
+                        <div class="form-group stylefg">
+                            <label for="Textarea">Votre message</label>
+                            <textarea class="form-control" id="Textarea" rows="6"placeholder="n'hésitez à nous poser vos questions"></textarea>
+                          </div>
                     </form>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 formul">
                 <div id="map"></div>
                 <div class="infocont">
-                    <a target="_blank" href="https://goo.gl/maps/Bs3S4Tkf7TE2">18 rue de la gare – 28240 La Loupe</a><br>                    L'espace de coworking se trouve au deuxième étage de la Wild Code School</p>
-                    <p>Du lundi au vendredi de 9h à 18h</p>
-                    <a href="tel:+0619344237">06  19  34  42  37</a><br>
-                    <a class="" href="mailto:contact@coworkinglaloupe.fr:">contact@coworkinglaloupe.fr</a><br>
+                    <p><a target="_blank" href="https://goo.gl/maps/Bs3S4Tkf7TE2"><i class="fa fa-map-marker adresse" aria-hidden="true"></i></a>
+                        18 rue de la gare – 28240 La Loupe<br>                    L'espace de coworking se trouve au deuxième étage de la Wild Code School</p>
+                    <p><i class="fa fa-clock-o adresse" aria-hidden="true"></i> lundi au vendredi de 9h à 18h</p>
+                    <p><i class="fa fa-phone adresse" aria-hidden="true"></i><a href="tel:+0619344237">06  19  34  42  37</a></p>
+                    <p><i class="fa fa-paper-plane-o adresse" aria-hidden="true"></i><a class="" href="mailto:contact@coworkinglaloupe.fr:">contact@coworkinglaloupe.fr</a></p>
                 </div>
             </div>
         </div>
