@@ -43,6 +43,12 @@ font-family: 'Asap Condensed', sans-serif;
         padding: 15px 0;
         font-weight: 900;
     }
+    #service .title{
+        color: white;
+    }
+    #service .texte{
+        color: white;
+    }
     
     .titleIntro {
         text-align: left;
@@ -64,6 +70,15 @@ font-family: 'Asap Condensed', sans-serif;
     }
     /* IMAGES */
     
+    .IconBox{
+        overflow: visible;
+        text-align: center;
+    }
+    .IconService{
+        max-width: 45vh;
+        margin-top: 13vh;
+        margin-bottom: -13vh;
+    }
     .placeholder {
         padding: 15px;
         max-width: 20vh;
@@ -200,6 +215,8 @@ font-family: 'Asap Condensed', sans-serif;
     #service {
         margin-top: 50px;
         padding-bottom: 60px;
+        /*background-color: rgba(61, 109, 139, 0.5);*/
+        background-color: rgba(61, 109, 139, 0.8);       
     }
     
     #tarifs {
