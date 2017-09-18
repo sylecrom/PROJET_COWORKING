@@ -38,21 +38,16 @@ $(document).ready(function () {
   $(window).on("scroll", function () {
     var wn = $(window).scrollTop();
     if (wn > 120) {
-      $(".barreNavColor").css("background", "rgba(255,255,255,1)");
+      $(".barreNavColor").css("background", "rgba(255, 254, 242,1)");
+      $("#menuText a").css("color", "rgba(0,0,0,1)");
     }
     else {
-      $(".barreNavColor").css("background", "rgba(255,255,255,0)");
+      $(".barreNavColor").css("background", "rgba(255, 254, 242,0)");
+      $("#menuText a").css("color", "rgba(255,255,255,1)");
     }
   });
 });
-/* effet hide show sur section*/
-$(function () {
-  $(".effetHi").hide()
-  $(".row").hover(function () {
-    $(".effetHi").show()
-  })
 
-});
 /*Bouton raccourcis*/
 window.onload = function () {
 
@@ -74,4 +69,61 @@ $(document).ready(function () {
 $('#mycheckbox').change(function() {
   $('#mycheckboxdiv').toggle();
 });
+});
+/* effet hide show sur section*/
+$(function () {
+  $(".effetHi").hide()
+  $(".space").hover(function () {
+    $(".effetHi").show()
+  })
+
+});
+$(function () {
+  $(".effetHi1").hide()
+  $(".service").hover(function () {
+    $(".effetHi1").show()
+  })
+
+});
+$(function () {
+  $(".effetHi2").hide()
+  $(".tarifs").hover(function () {
+    $(".effetHi2").show()
+  })
+
+
+});
+
+/** apparition des menus au clic cur nav desktop **/
+
+$(function () {
+  $(".tarifBan").click(function () {
+    $(".effetHi2").show();
+  })
+});
+$(function () {
+  $(".espaBan").click(function () {
+    $(".effetHi").show();
+  })
+});
+$(function () {
+  $(".serBan").click(function () {
+    $(".effetHi1").show();
+  })
+});
+/** apparition des menus au clic sur nav mobile **/
+$(function () {
+  $(".tarifBanM").click(function () {
+    $(".effetHi2").show();
+  })
+});
+$(function () {
+  $(".espaBanM").click(function () {
+    $(".effetHi").show();
+  })
+});
+$(function () {
+  $(".serBanM").click(function () {
+    $(".effetHi1").show();
+  })
 });
