@@ -38,10 +38,12 @@ $(document).ready(function () {
   $(window).on("scroll", function () {
     var wn = $(window).scrollTop();
     if (wn > 120) {
-      $(".barreNavColor").css("background", "rgba(255,255,255,1)");
+      $(".barreNavColor").css("background", "rgba(255, 254, 242,1)");
+      $("#menuText a").css("color", "rgba(0,0,0,1)");
     }
     else {
-      $(".barreNavColor").css("background", "rgba(255,255,255,0)");
+      $(".barreNavColor").css("background", "rgba(255, 254, 242,0)");
+      $("#menuText a").css("color", "rgba(255,255,255,1)");
     }
   });
 });

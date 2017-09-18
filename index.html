@@ -27,9 +27,9 @@
     <!-- barre de navigation-->
     <div class="navbar navbar-default navbar-fixed-top barreNavColor">
         <div class="container">
-            <a class="navbar-brand " href=""><img class="logo" src="css/img/ILLUSTRATION-250X250.png" alt="logo"></a>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
+            <a class="navbar-brand animated bounce" href=""><img class="logo" src="css/img/LOGO.png" alt="logo"></a>
+            <div class="collapse navbar-collapse" id="menuText">
+                <ul class="nav navbar-nav navbar-right ">
                     <li><a class="js-scrollTo hvr-overline-from-left" href="#banner">ACCUEIL</a></li>
                     <li><a class="js-scrollTo hvr-overline-from-left espaBan" href="#espace">ESPACE</a></li>
                     <li><a class="js-scrollTo hvr-overline-from-left serBan" href="#service">SERVICE</a></li>
@@ -81,11 +81,16 @@
     <!-- ACCUEIL BANNIERE-->
     <section>
         <div id="banner" class="container-fluid tableau vignette">
-            <div class="container banner center">
-                <img class="ImageBan animated zoomInUp" src="css/img/LOGO.png" alt="IMAGEetLOGOS">
-                <!--h1 class="GrosTitre">COWORKING LA LOUPE</h1-->
-                <a class="btn btn-warning js-scrollTo" href="#accueil" role="button">en savoir plus</a>
-                <img class="ordi" src="css/img/coffeeLaptop.png" alt="ordinateur">
+            <div class="container banner">
+                <div class="col-md-11">
+                    <img class="ImageBan animated zoomInUp" src="css/img/LOGO.png" alt="LOGO">
+                    <!--h1 class="GrosTitre">COWORKING LA LOUPE</h1-->
+                    <div>
+                        <img class="ordi" src="css/img/coffeeLaptop.png" alt="ordinateur">
+                    </div>
+                    <a class="btn btn-warning bouton js-scrollTo" href="#accueil" role="button">en savoir plus</a>
+
+                </div>
             </div>
         </div>
     </section>
@@ -94,17 +99,17 @@
         <div id="accueil" class="container-fluid">
             <div class="container center">
                 <div class "row">
-                    <div class="col-sm-6">
-                        <img class="ImageBan" src="css/img/ILLUSTRATION-250X250.png" alt="image de bureau">
-                    </div>
-                    <div class="col-sm-6 texte">
-                        <h1 class="title">COWORKING LA LOUPE</h1>
-                        <p>Situé au pied de la gare, le « Coworking La Loupe » est un espace de travail partagé accessible
-                            à tous. Plus qu'un simple bureau, c'est un lieu de travail ouvert, destiné aux entrepreneurs
-                            indépendants, télétravailleurs et salariés itinérants. Il vous permet de travailler dans
-                            un bureau à un tarif raisonnable et de rencontrer et échanger avec des professionnels de divers
-                            horizons. Le lieu est porté par la Communauté de communes « Terres de Perche » et la Wild Code
-                            School, l’école de développeurs web.
+                    <!--div class="col-sm-6">
+                        <img class="ImageBan animated fadeInDown" src="css/img/ILLUSTRATION-250X250.png" alt="image de bureau">
+                    </div-->
+                    <div class="col-offset-1 col-sm-9 texte">
+                        <h1 class="titleIntro">Situé au pied de la gare,</h1>
+                        <p class="texteIntro"> le « Coworking La Loupe » est un espace de travail partagé accessible à tous.<br>Plus qu'un simple
+                            bureau, c'est un lieu de travail ouvert, destiné aux entrepreneurs indépendants, télétravailleurs
+                            et salariés itinérants.<br>Il vous permet de travailler dans un bureau à un tarif raisonnable
+                            et de rencontrer et échanger avec des professionnels de divers horizons.<br><br>Le lieu est
+                            porté par la Communauté de communes « Terres de Perche » et la Wild Code School, l’école de
+                            développeurs web.
                         </p>
                     </div>
                 </div>
