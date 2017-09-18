@@ -50,7 +50,7 @@ body {
 
 /* IMAGES */
 
-img {
+.placeholder{
     padding: 15px;
     max-width: 20vh;
 }
@@ -64,15 +64,33 @@ img {
 }
 
 .ImageBan {
-    padding: 95px 0;
-    max-width: 50vh;
+    position: absolute;
+    padding: 10vh 0;
+    max-width: 85vw;
+    left: 3vw;
 }
+.ordi{
+    position: absolute;
+    bottom : -20vh;
+    right : -30vw;
+    width: 80vw;
+    min-width: 500px;    
 
+}
+/* BACKGROUND COLORS & EFFECTS */
+.tableau{
+    background-image:url(img/textureTableau.jpg);
+    background-size: 50%;
+    background-color:rgba(61, 109, 139, 0.5);
+    background-blend-mode: overlay;
+}
+.vignette {
+    box-shadow: 0 0 400vw rgba(0, 0, 0, 0.7) inset;
+}
 
 /* SECTIONS */
 
 #banner {
-    background-color: #58c4b8;
     margin-top: 0px;
     padding-bottom: 60px;
     min-height: 100vh;
