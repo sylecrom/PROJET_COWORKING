@@ -85,7 +85,7 @@
                 <img class="ImageBan animated zoomInUp" src="css/img/LOGO.png" alt="IMAGEetLOGOS">
                 <!--h1 class="GrosTitre">COWORKING LA LOUPE</h1-->
                 <a class="btn btn-warning js-scrollTo" href="#accueil" role="button">en savoir plus</a>
-                <img class="ordi" src="css/img/coffeeLaptop.png" alt="ordinateur">                
+                <img class="ordi" src="css/img/coffeeLaptop.png" alt="ordinateur">
             </div>
         </div>
     </section>
@@ -181,7 +181,7 @@
     <section id="contact" class="container-fluid footerfr">
         <div class="row">
             <div class="col-md-6 col-sm-12 formul">
-                <button data-toggle="modal" href="#infos" class="btn btn-primary">Réserver</button>
+                <button data-toggle="modal" href="#infos" class="btn btn-primary resabut">Réserver</button>
 
                 <div class="modal" id="infos">
 
@@ -193,14 +193,58 @@
 
                                 <button type="button" class="close" data-dismiss="modal">x</button>
 
-                                <h4 class="modal-title">Réservation</h4>
+                                <h1 class="modal-title">Réservation</h1>
 
                             </div>
 
                             <div class="modal-body">
-
-                                CALENDRIER
-
+                                <div class="form-group">
+                                    <h2 class="heading titreform">Détails</h2>
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="controls">
+                                                <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+                                                <label for="arrive" class="label-date indate"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrivée</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="controls">
+                                                <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
+                                                <label for="depart" class="label-date indate"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Départ</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="controls">
+                                                <!--<i class="fa fa-sort fleche"></i>-->
+                                                <select class="floatLabel labpers">
+                                                  <option value="blank"></option>
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                                  <option value="3">3</option>
+                                                  <option value="4">4</option>
+                                                  <option value="5">5</option>
+                                                  <option value="6">6</option>
+                                                  <option value="7">7</option>
+                                                  <option value="8">8</option>
+                                                  <option value="9">9</option>
+                                                  <option value="10">10</option>
+                                                </select>
+                                                <label for="fruit" class="iconpers"><i class="fa fa-male lemale"></i>&nbsp;&nbsp;People</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <input type="checkbox" name="mycheckbox" id="mycheckbox" value="0" /><label>&nbsp;&nbsp;Salle de réunion</label>
+                                            <div id="mycheckboxdiv" style="display:none">
+                                                <div class="controls">
+                                                    <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
+                                                    <label for="depart" class="label-date indate"><i class="fa fa-calendar"></i></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="modal-footer">
@@ -217,35 +261,37 @@
                 <div class="infoform">
                     <div class="form-group stylefg">
                         <label for="InputNom">Nom</label>
-                        <input type="text" class="form-control" id="InputNom" placeholder="Votre Nom">
-                    </div>
-                    <div class="form-group stylefg">
-                        <label for="InputPrenom">Prénom</label>
-                        <input type="password" class="form-control" id="InputPrenom" placeholder="Votre prénom">
-                    </div>
-                    <div class="form-group stylefg">
-                        <label for="InputEmail1">Adresse email</label>
-                        <input type="email" class="form-control" id="InputEmail1" placeholder="email@internet.com">
-                    </div>
-                    <div class="form-group stylefg">
-                        <label for="Textarea">Votre message</label>
-                        <textarea class="form-control" id="Textarea" rows="6" placeholder="n'hésitez à nous poser vos questions"></textarea>
-                    </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 formul">
-                <div id="map"></div>
-                <div class="infocont">
-                    <p><a target="_blank" href="https://goo.gl/maps/Bs3S4Tkf7TE2"><i class="fa fa-map-marker adresse" aria-hidden="true"></i></a>                        18 rue de la gare – 28240 La Loupe<br> L'espace de coworking se trouve au deuxième étage de la Wild
-                        Code School</p>
-                    <p><i class="fa fa-clock-o adresse" aria-hidden="true"></i> lundi au vendredi de 9h à 18h</p>
-                    <p><i class="fa fa-phone adresse" aria-hidden="true"></i><a href="tel:+0619344237">06  19  34  42  37</a></p>
-                    <p><i class="fa fa-paper-plane-o adresse" aria-hidden="true"></i><a class="" href="mailto:contact@coworkinglaloupe.fr:">contact@coworkinglaloupe.fr</a></p>
-                </div>
-            </div>
-        </div>
-        </div>
+                                                    <input type="text" class="form-control" id="InputNom" placeholder="Votre Nom">
+                                                </div>
+                                                <div class="form-group stylefg">
+                                                    <label for="InputPrenom">Prénom</label>
+                                                    <input type="password" class="form-control" id="InputPrenom" placeholder="Votre prénom">
+                                                </div>
+                                                <div class="form-group stylefg">
+                                                    <label for="InputEmail1">Adresse email</label>
+                                                    <input type="email" class="form-control" id="InputEmail1" placeholder="email@internet.com">
+                                                </div>
+                                                <div class="form-group stylefg">
+                                                    <label for="Textarea">Votre message</label>
+                                                    <textarea class="form-control" id="Textarea" rows="6" placeholder="n'hésitez à nous poser vos questions"></textarea>
+                                                </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 formul">
+                                            <div id="map"></div>
+                                            <div class="infocont">
+                                                <p><a target="_blank" href="https://goo.gl/maps/Bs3S4Tkf7TE2"><i class="fa fa-map-marker adresse" aria-hidden="true"></i></a>                                                    18 rue de la gare – 28240 La Loupe<br> L'espace de coworking se trouve
+                                                    au deuxième étage de la Wild Code School</p>
+                                                <p><i class="fa fa-clock-o adresse" aria-hidden="true"></i> lundi au vendredi
+                                                    de 9h à 18h</p>
+                                                <p><i class="fa fa-phone adresse" aria-hidden="true"></i><a href="tel:+0619344237">06  19  34  42  37</a></p>
+                                                <p><i class="fa fa-paper-plane-o adresse" aria-hidden="true"></i><a class=""
+                                                        href="mailto:contact@coworkinglaloupe.fr:">contact@coworkinglaloupe.fr</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
     </section>
     <div class="container-fluid mentions">
         <p>Mentions Légales</p>
