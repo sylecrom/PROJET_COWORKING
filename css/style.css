@@ -401,23 +401,28 @@ font-family: 'Asap Condensed', sans-serif;
         font-size: 18px;
         margin-right: 12px;
     }
+    
     .grid {
         vertical-align: baseline;
     }
+    
     .controls {
         text-align: left;
         position: relative;
     }
+    
     .indate {
         position: absolute;
-        top:-11px;
+        top: -11px;
         left: 8px;
         background-color: white;
         padding: 4px 10px;
     }
+    
     .indate i {
         margin-top: 0;
     }
+    
     input[type="date"], textarea, button, select {
         padding: 12px;
         font-size: 14px;
@@ -435,14 +440,16 @@ font-family: 'Asap Condensed', sans-serif;
         border-color: #9FB1C1;
     }
     
-    .controls :hover {
+    .controls:hover {
         color: #bdcc00;
         cursor: text;
     }
+    
     .titreform {
         margin-top: 0px;
         margin-bottom: 25px;
     }
+    
     .iconpers {
         position: absolute;
         top: -11px;
@@ -451,6 +458,7 @@ font-family: 'Asap Condensed', sans-serif;
         padding: 4px 10px;
         background-color: white;
     }
+    
     .fleche {
         position: absolute;
         top: 17px;
@@ -458,12 +466,15 @@ font-family: 'Asap Condensed', sans-serif;
         text-align: right;
         margin-top: 0px;
     }
+    
     .lemale {
         margin-top: 0px;
     }
+    
     .labpers {
         background-color: white;
     }
+    
     .resabut {
         margin-bottom: 20px;
     }
