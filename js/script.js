@@ -38,35 +38,37 @@ $(document).ready(function () {
   $(window).on("scroll", function () {
     var wn = $(window).scrollTop();
     if (wn > 120) {
-      $(".barreNavColor").css("background", "rgba(255,255,255,1)");
+      $(".barreNavColor").css("background", "rgba(255, 254, 242,1)");
+      $("#menuText a").css("color", "rgba(0,0,0,1)");
     }
     else {
-      $(".barreNavColor").css("background", "rgba(255,255,255,0)");
+      $(".barreNavColor").css("background", "rgba(255, 254, 242,0)");
+      $("#menuText a").css("color", "rgba(255,255,255,1)");
     }
   });
 });
 /* effet hide show sur section*/
-$(function(){
-            $(".effetHi").hide()
-            $(".row").hover(function(){
-              $(".effetHi").show()
-            })
+$(function () {
+  $(".effetHi").hide()
+  $(".row").hover(function () {
+    $(".effetHi").show()
+  })
 
 });
 /*Bouton raccourcis*/
 window.onload = function () {
-  
-      var element = document.getElementById('cn-button');
-  
-      element.onclick = function () {
-          var d = document.getElementById("cn-wrapper").classList;
-          if (d.contains("opened-nav")) {
-              
-                 d.remove("opened-nav");
-              
-              } else {
-              
-                 d.add("opened-nav");
-              }
-      }
+
+  var element = document.getElementById('cn-button');
+
+  element.onclick = function () {
+    var d = document.getElementById("cn-wrapper").classList;
+    if (d.contains("opened-nav")) {
+
+      d.remove("opened-nav");
+
+    } else {
+
+      d.add("opened-nav");
+    }
   }
+}
