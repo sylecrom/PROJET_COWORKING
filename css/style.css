@@ -247,6 +247,7 @@ img {
     display: inline-block;
     text-align: left;
 }
+
 .infocont a {
     color: rgb(204, 204, 204);
 }
@@ -370,19 +371,23 @@ i {
         width: 3em;
     }
 }
+
 .stylefg {
     color: rgb(204, 204, 204);
 }
+
 .stylefg input {
     background-color: rgba(255, 255, 255, 0);
     border-radius: 0px;
     border-width: 2px;
 }
+
 #Textarea {
     background-color: rgba(255, 255, 255, 0);
     border-radius: 0px;
     border-width: 2px;
 }
+
 .adresse {
     font-size: 18px;
     margin-right: 12px;
