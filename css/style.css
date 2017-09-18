@@ -50,7 +50,7 @@ body {
 
 /* IMAGES */
 
-.placeholder{
+.placeholder {
     padding: 15px;
     max-width: 20vh;
 }
@@ -69,24 +69,29 @@ body {
     max-width: 85vw;
     left: 3vw;
 }
-.ordi{
-    position: absolute;
-    bottom : -20vh;
-    right : -30vw;
-    width: 80vw;
-    min-width: 500px;    
 
+.ordi {
+    position: absolute;
+    bottom: -20vh;
+    right: -30vw;
+    width: 80vw;
+    min-width: 500px;
 }
+
+
 /* BACKGROUND COLORS & EFFECTS */
-.tableau{
-    background-image:url(img/textureTableau.jpg);
+
+.tableau {
+    background-image: url(img/textureTableau.jpg);
     background-size: 50%;
-    background-color:rgba(61, 109, 139, 0.5);
+    background-color: rgba(61, 109, 139, 0.5);
     background-blend-mode: overlay;
 }
+
 .vignette {
     box-shadow: 0 0 400vw rgba(0, 0, 0, 0.7) inset;
 }
+
 
 /* SECTIONS */
 
@@ -409,4 +414,55 @@ i {
 .adresse {
     font-size: 18px;
     margin-right: 12px;
+}
+
+
+/**duree apparition des animation img**/
+
+.animated.zoomInUp {
+    animation-duration: 3s;
+    transition-property: all;
+}
+
+img.animated.fadeInDown {
+    animation-duration: 3s;
+}
+
+.animated.fadeInUp {
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+
+/* Overline From Left  apprition d'une barre au dessus des commandes accueil, espace,...*/
+
+.hvr-overline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-overline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    top: 0;
+    background: #f9a02e;
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-overline-from-left:hover:before, .hvr-overline-from-left:focus:before, .hvr-overline-from-left:active:before {
+    right: 0;
 }
