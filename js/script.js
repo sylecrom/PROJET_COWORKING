@@ -40,6 +40,8 @@ $(document).ready(function () {
     if (wn > 120) {
       $(".barreNavColor").css("background", "rgba(255, 254, 242,1)");
       $("#menuText a").css("color", "rgba(0,0,0,1)");
+      $(".logo").css("-webkit-filter", "invert(1)");
+      $(".logo").css("filter", "invert(1)");
     }
     else {
       $(".barreNavColor").css("background", "rgba(255, 254, 242,0)");
@@ -66,28 +68,28 @@ window.onload = function () {
   }
 }
 $(document).ready(function () {
-$('#mycheckbox').change(function() {
-  $('#mycheckboxdiv').toggle();
-});
+  $('#mycheckbox').change(function () {
+    $('#mycheckboxdiv').toggle();
+  });
 });
 /* effet hide show sur section*/
 $(function () {
   $(".effetHi").hide()
-  $(".space").hover(function () {
+  $("#espace").mouseenter(function () {
     $(".effetHi").show()
   })
 
 });
 $(function () {
   $(".effetHi1").hide()
-  $(".service").hover(function () {
+  $("#service").mouseenter(function () {
     $(".effetHi1").show()
   })
 
 });
 $(function () {
   $(".effetHi2").hide()
-  $(".tarifs").hover(function () {
+  $("#tarifs").mouseenter(function () {
     $(".effetHi2").show()
   })
 
