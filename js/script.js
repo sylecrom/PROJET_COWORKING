@@ -46,6 +46,8 @@ $(document).ready(function () {
     else {
       $(".barreNavColor").css("background", "rgba(255, 254, 242,0)");
       $("#menuText a").css("color", "rgba(255,255,255,1)");
+      $(".logo").css("-webkit-filter", "none");
+      $(".logo").css("filter", "none");
     }
   });
 });
