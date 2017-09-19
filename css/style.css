@@ -9,6 +9,7 @@ font-family: 'Asap Condensed', sans-serif;
     
     body, html {
         overflow-x: hidden;
+        overflow-y: scroll !important;
     }
     
     section {
@@ -71,13 +72,19 @@ font-family: 'Asap Condensed', sans-serif;
     /* IMAGES */
     
     .IconBox{
+        position: relative;        
         overflow: visible;
-        text-align: center;
+        margin: 15vh;
     }
     .IconService{
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
         max-width: 45vh;
-        margin-top: 13vh;
-        margin-bottom: -13vh;
+
     }
     .placeholder {
         padding: 15px;
@@ -439,12 +446,52 @@ font-family: 'Asap Condensed', sans-serif;
         transform: skew(-25deg) rotate(-57.5deg) scale(1);
         transition: opacity 0.3s, color 0.3s;
     }
-    
-    .cn-wrapper li {
-        height: 3em;
-        width: 3em;
+    .cn-wrapper li:first-child {
+        transform: rotate(-7.5deg) skew(25deg);
     }
     
+    .cn-wrapper li:nth-child(2) {
+        transform: rotate(57.5deg) skew(25deg);
+    }
+    
+    .cn-wrapper li:nth-child(3) {
+        transform: rotate(122.5deg) skew(25deg)
+    }
+    
+    @media screen and (max-width:480px) {
+        .cn-wrapper {
+            font-size: .68em;
+        }
+        .cn-button {
+            font-size: 1em;
+        }
+        .cn-wrapper li {
+            font-size: 1.52em;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        .cn-wrapper {
+            font-size: .68em;
+        }
+        .cn-button {
+            font-size: 1em;
+        }
+        .cn-wrapper li {
+            font-size: 1.52em;
+        }
+    }
+    
+    @media screen and (max-width:320px) {
+        .cn-wrapper {
+            width: 15.15px;
+            margin-left: -7.5em;
+        }
+        .cn-wrapper li {
+            height: 3em;
+            width: 3em;
+        }
+    }
     .stylefg {
         color: rgb(204, 204, 204);
     }
@@ -516,74 +563,6 @@ font-family: 'Asap Condensed', sans-serif;
     i {
         margin-top: 20px;
         transform: scale(1.4);
-    }
-    
-    .cn-wrapper li:first-child {
-        transform: rotate(-7.5deg) skew(25deg);
-    }
-    
-    .cn-wrapper li:nth-child(2) {
-        transform: rotate(57.5deg) skew(25deg);
-    }
-    
-    .cn-wrapper li:nth-child(3) {
-        transform: rotate(122.5deg) skew(25deg)
-    }
-    
-    @media screen and (max-width:480px) {
-        .cn-wrapper {
-            font-size: .68em;
-        }
-        .cn-button {
-            font-size: 1em;
-        }
-        .cn-wrapper li {
-            font-size: 1.52em;
-        }
-    }
-    
-    @media screen and (max-width:480px) {
-        .cn-wrapper {
-            font-size: .68em;
-        }
-        .cn-button {
-            font-size: 1em;
-        }
-        .cn-wrapper li {
-            font-size: 1.52em;
-        }
-    }
-    
-    @media screen and (max-width:320px) {
-        .cn-wrapper {
-            width: 15.15px;
-            margin-left: -7.5em;
-        }
-        .cn-wrapper li {
-            height: 3em;
-            width: 3em;
-        }
-    }
-    
-    .stylefg {
-        color: rgb(204, 204, 204);
-    }
-    
-    .stylefg input {
-        background-color: rgba(255, 255, 255, 0);
-        border-radius: 0px;
-        border-width: 2px;
-    }
-    
-    #Textarea {
-        background-color: rgba(255, 255, 255, 0);
-        border-radius: 0px;
-        border-width: 2px;
-    }
-    
-    .adresse {
-        font-size: 18px;
-        margin-right: 12px;
     }
     
     .grid {
