@@ -23,6 +23,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <script src="viewportchecker.js"></script>
     <script type='text/javascript' src='js/script.js'></script>
    <script type="text/javascript"
    src="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js">
@@ -34,10 +35,10 @@
     <!-- barre de navigation-->
     <div class="navbar navbar-default navbar-fixed-top barreNavColor">
         <div class="container">
-            <a class="navbar-brand animated bounce" href=""><img class="logo" src="css/img/LOGO.png" alt="logo"></a>
+            <a class="navbar-brand animated bounce js-scrollTo" href="#banner"><img class="logo" src="css/img/LOGO.png" alt="logo"></a>
             <div class="collapse navbar-collapse" id="menuText">
                 <ul class="nav navbar-nav navbar-right ">
-                    <li><a class="js-scrollTo hvr-overline-from-left" href="#banner">ACCUEIL</a></li>
+                    <li><a class="js-scrollTo hvr-overline-from-left" href="#accueil">ACCUEIL</a></li>
                     <li><a class="js-scrollTo hvr-overline-from-left espaBan" href="#espace">ESPACE</a></li>
                     <li><a class="js-scrollTo hvr-overline-from-left serBan" href="#service">SERVICE</a></li>
                     <li><a class="js-scrollTo hvr-overline-from-left tarifBan" href="#tarifs">TARIFS</a></li>
@@ -96,6 +97,9 @@
                     <a class="btn btn-warning bouton js-scrollTo" href="#accueil" role="button">en savoir plus</a>
 
                 </div>
+                <div class="boxOrdi">
+                    <img class="ordi" src="css/img/coffeeLaptop.png" alt="ordinateur">
+                </div>
             </div>
         </div>
         <div class="ordif">
@@ -112,13 +116,24 @@
                     </div-->
                     <div class="col-offset-1 col-sm-9 texte">
                         <h1 class="titleIntro">Situé au pied de la gare,</h1>
-                        <p class="texteIntro"> le « Coworking La Loupe » est un espace de travail partagé accessible à tous.<br>Plus qu'un simple
+                        <p class="texteIntro cesure"> le « Coworking La Loupe » est un espace de travail partagé accessible à tous.<br>Plus qu'un simple
                             bureau, c'est un lieu de travail ouvert, destiné aux entrepreneurs indépendants, télétravailleurs
                             et salariés itinérants.<br>Il vous permet de travailler dans un bureau à un tarif raisonnable
-                            et de rencontrer et échanger avec des professionnels de divers horizons.<br><br>Le lieu est
-                            porté par la Communauté de communes « Terres de Perche » et la Wild Code School, l’école de
-                            développeurs web.
+                            et de rencontrer et échanger avec des professionnels de divers horizons.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="accueilbis" class="container-fluid">
+            <div class="container center">
+                <div class "row">
+                    <div class="col-offset-1 col-sm-9 texte">
+                        <p class="texteIntroBis cesure"> Le lieu est porté par la Communauté de communes « Terres de Perche » et la Wild Code School, l’école
+                            de développeurs web.
+                        </p>
+                        <img class="col-md-6 invert nomargin placeholder animated fadeInDown" src="css/img/logo_terre_de_perche.png" alt="logo">
+                        <img class="col-md-6 invert placeholder animated fadeInDown" src="css/img/logo_WCS.png" alt="logo">
                     </div>
                 </div>
             </div>
@@ -127,20 +142,20 @@
     <!-- ESPACE -->
     <section id="espace" class="container-fluid">
         <div class="container">
-            <h1 class="title space">Venez travailler au Coworking La Loupe, vous y trouverez :</h1>
-            <div class="row effetHi">
+            <h1 class="title space marges">Venez travailler au Coworking La Loupe, vous y trouverez&nbsp;:</h1>
+            <div class="row">
                 <div class="col-sm-4">
-                    <img class="placeholder animated fadeInDown" src="css/img/ILLUSTRATION-250X250.png" alt="image de bureau">
+                    <img class="placeholder animated fadeInDown" src="css/img/canap.png" alt="image de bureau">
                     <h1 class="title animated fadeInUp">Open-Space</h1>
                     <p class="texte animated fadeInUp">Une salle toute équipée de 35m2</p>
                 </div>
                 <div class="col-sm-4">
-                    <img class="placeholder animated fadeInDown" src="css/img/ILLUSTRATION-250X250.png" alt="image de bureau">
+                    <img class="placeholder animated fadeInDown" src="css/img/canap.png" alt="image de bureau">
                     <h1 class="title animated fadeInUp">Espace détente</h1>
-                    <p class="texte animated fadeInUp">Un espace de repos idéal pour les s (ou grandes) pauses !</p>
+                    <p class="texte animated fadeInUp">Un espace de repos idéal pour les petites (ou grandes) pauses !</p>
                 </div>
                 <div class="col-sm-4">
-                    <img class="placeholder animated fadeInDown" src="css/img/ILLUSTRATION-250X250.png" alt="image de bureau">
+                    <img class="placeholder animated fadeInDown" src="css/img/canap.png" alt="image de bureau">
                     <h1 class="title animated fadeInUp">Salle de réunion</h1>
                     <p class="texte animated fadeInUp">Pouvant accueillir 10 personnes, équipée pour la visioconférence</p>
                 </div>
@@ -149,49 +164,59 @@
     </section>
     <!-- SERVICE -->
     <section id="service" class="container-fluid">
-        <div class="container">
-            <h1 class="service">Afin de travailler dans les meilleurs conditions :</h1>
-            <div class="row effetHi1">
+        <div class="container vcenter">
+            <h1 class="title service marges">Afin de travailler dans les meilleurs conditions&nbsp;:</h1>
+            <div class="row">
                 <div class="col-sm-4">
-                    <img class="placeholder animated fadeInDown" src="css/img/ILLUSTRATION-250X250.png" alt="image de bureau">
-                    <p class="title animated fadeInUp">Connexion internet<br>haut débit Wifi</p>
+                    <div class="IconBox">
+                        <img class="IconService animated fadeInDown" src="css/img/wifi.png" alt="image de bureau">
+                    </div>
+
+                    <p class="textservice animated fadeInUp">Connexion internet<br>haut débit Wifi<br></p>
                 </div>
                 <div class="col-sm-4">
-                    <img class="placeholder animated fadeInDown" src="css/img/ILLUSTRATION-250X250.png" alt="image de bureau">
-                    <p class="title animated fadeInUp">Imprimante<br>photocopieur<br>scan</p>
+                    <div class="IconBox">
+                        <img class="IconService animated fadeInDown" src="css/img/printer.png" alt="image de bureau">
+                    </div>
+
+                    <p class="textservice animated fadeInUp">Imprimante<br>photocopieur<br>scan</p>
                 </div>
                 <div class="col-sm-4">
-                    <img class="placeholder animated fadeInDown" src="css/img/ILLUSTRATION-250X250.png" alt="image de bureau">
-                    <p class="title animated fadeInUp">Espace déjeuner<br>cuisine équipée</p>
+                    <div class="IconBox">
+                        <img class="IconService animated fadeInDown" src="css/img/cook.png" alt="image de bureau">
+                    </div>
+
+                    <p class="textservice animated fadeInUp">Espace déjeuner<br>cuisine équipée</p>
                 </div>
+
             </div>
         </div>
     </section>
     <!-- TARIFS -->
     <section id="tarifs" class="container-fluid">
         <div class="container">
-            <h1 class="title tarifs">TARIFS</h1>
-            <div class="row effetHi2">
+            <h1 class="title tarifs marges">TARIFS</h1>
+            <div class="row apparition">
                 <div class="col-sm-4">
-                    <img class="placeholder animated fadeInDown" src="css/img/ILLUSTRATION-250X250.png" alt="image de bureau">
+                    <img class="placeholder animated fadeInDown" src="css/img/month.png" alt="image de bureau">
                     <h1 class="title animated fadeInUp">QUOTIDIEN</h1>
-                    <h1 class="title animated fadeInUp">10€</h1>
+                    <h1 class="textTarif animated fadeInUp">10€</h1>
                 </div>
                 <div class="col-sm-4">
-                    <img class="placeholder animated fadeInDown" src="css/img/ILLUSTRATION-250X250.png" alt="image de bureau">
-                    <h1 class="title animated fadeInUp">HEBDO<span class=""> (lundi>vendredi)</span></h1>
-                    <h1 class="title animated fadeInUp">45€</h1>
+                    <img class="placeholder animated fadeInDown" src="css/img/month.png" alt="image de bureau">
+                    <h1 class="title animated fadeInUp">HEBDO<span class="semaine"> (lundi>vendredi)</span></h1>
+                    <h1 class="textTarif animated fadeInUp">45€</h1>
                 </div>
-                <div class="col-sm-4">
-                    <img class="placeholder animated fadeInDown" src="css/img/ILLUSTRATION-250X250.png" alt="image de bureau">
-                    <h1 class="title animated fadeInUp">QUOTIDIEN</h1>
-                    <h1 class="title animated fadeInUp">10€</h1>
+                <div class="col-sm-4 center">
+                    <img class="placeholder animated fadeInDown" src="css/img/month.png" alt="image de bureau" -->
+                    <h1 class="title animated fadeInUp">MENSUEL</h1>
+                    <h1 class="textTarif animated fadeInUp">170€</h1>
                 </div>
             </div>
         </div>
     </section>
     <!-- FOOTER -->
-    <section id="contact" class="container-fluid footerfr">
+    <section id="contact" class="container-fluid footerfr tableau">
         <div class="row">
             <div class="col-md-6 col-sm-12 formul">
                 <button data-toggle="modal" href="#infos" class="btn btn-primary resabut">Réserver</button>

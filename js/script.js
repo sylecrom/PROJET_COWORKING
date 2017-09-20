@@ -29,6 +29,7 @@ $(document).ready(function () {
     var page = $(this).attr('href');
     var speed = 750;
     $('html, body').animate({ scrollTop: $(page).offset().top - 50 }, speed);
+    $('.menuBurger input').prop('checked', false);
     return false;
   });
 });
@@ -40,10 +41,14 @@ $(document).ready(function () {
     if (wn > 120) {
       $(".barreNavColor").css("background", "rgba(255, 254, 242,1)");
       $("#menuText a").css("color", "rgba(0,0,0,1)");
+      $(".logo").css("-webkit-filter", "invert(1)");
+      $(".logo").css("filter", "invert(1)");
     }
     else {
       $(".barreNavColor").css("background", "rgba(255, 254, 242,0)");
       $("#menuText a").css("color", "rgba(255,255,255,1)");
+      $(".logo").css("-webkit-filter", "none");
+      $(".logo").css("filter", "none");
     }
   });
 });
@@ -66,13 +71,14 @@ window.onload = function () {
   }
 }
 $(document).ready(function () {
-$('#mycheckbox').change(function() {
-  $('#mycheckboxdiv').toggle();
-});
+  $('#mycheckbox').change(function () {
+    $('#mycheckboxdiv').toggle();
+  });
 });
 /* effet hide show sur section*/
 $(document).ready( function() {
   $(".effetHi").hide()
+<<<<<<< HEAD
   var topOfOthDiv = $(".effetHide").offset().top;
   $(window).scroll(function() {
       if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
@@ -86,20 +92,31 @@ $(document).ready( function() {
 /*$(function () {
   $(".effetHi").hide()
   $(".space").scroll(function () {
+=======
+  $("#espace").mouseenter(function () {
+>>>>>>> dev
     $(".effetHi").show()
   })
 
 });*/
 $(function () {
   $(".effetHi1").hide()
+<<<<<<< HEAD
   $(".service").scroll(function () {
+=======
+  $("#service").mouseenter(function () {
+>>>>>>> dev
     $(".effetHi1").show()
   })
 
 });
 $(function () {
   $(".effetHi2").hide()
+<<<<<<< HEAD
   $(".tarifs").scroll(function () {
+=======
+  $("#tarifs").mouseenter(function () {
+>>>>>>> dev
     $(".effetHi2").show()
   })
 
@@ -139,6 +156,26 @@ $(function () {
     $(".effetHi1").show();
   })
 });
+<<<<<<< HEAD
 $(function () {
   $('#datetimepicker1').datetimepicker();
 });
+=======
+
+/** apparition des sections à l'écran **/
+$(document).ready(function () {
+  $('.apparition').viewportChecker({
+    // Class to add to the elements when they are visible
+    classToAdd: 'visible',
+    // The offset of the elements (let them appear earlier or later)
+    offset: 100,
+
+    // Add the possibility to remove the class if the elements are not visible
+    repeat: false,
+
+    // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+    callbackFunction: function (elem, action) { }
+  });
+});
+
+>>>>>>> dev
