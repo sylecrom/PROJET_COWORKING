@@ -11,23 +11,25 @@ font-family: 'Asap Condensed', sans-serif;
         text-align: center;
         position: relative;
     }
-    .cesure{
-        hyphens:auto;        
+    
+    .cesure {
+        hyphens: auto;
     }
     
     row {
         position: relative;
-        
         display: table-cell;
     }
+    
     @media (min-width: 768px) {
-    .vcenter {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        .vcenter {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
-}
+    
     .center {
         text-align: center;
     }
@@ -51,13 +53,14 @@ font-family: 'Asap Condensed', sans-serif;
         font-size: 4vh;
         padding: 15px 0;
     }
-    .textservice{
-        color: white;        
-    font-size: 4vh;
-    padding: 15px 0;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-}
+    
+    .textservice {
+        color: white;
+        font-size: 4vh;
+        padding: 15px 0;
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+    }
     
     .marges {
         margin-bottom: 10vh;
@@ -70,7 +73,7 @@ font-family: 'Asap Condensed', sans-serif;
     
     #services .texte {
         color: white;
-        margin-top:10vh;
+        margin-top: 10vh;
     }
     
     .titleIntro {
@@ -109,7 +112,7 @@ font-family: 'Asap Condensed', sans-serif;
         position: relative;
         overflow: visible;
         margin-top: 10vh;
-        }
+    }
     
     .IconService {
         position: absolute;
@@ -122,9 +125,18 @@ font-family: 'Asap Condensed', sans-serif;
     }
     
     .placeholder {
-        padding: 15px;
+        margin-top: 15px;
         width: 100%;
         max-width: 35vh;
+    }
+    
+    .placeholder2 {
+        width: 105%;
+        max-width: 40vh;
+    }
+    
+    .shadow {
+        box-shadow: 2px 2px 15px rgba(136, 136, 136, 0.5);
     }
     
     .logo {
