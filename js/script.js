@@ -71,23 +71,35 @@ $('#mycheckbox').change(function() {
 });
 });
 /* effet hide show sur section*/
-$(function () {
+$(document).ready( function() {
   $(".effetHi").hide()
-  $(".space").hover(function () {
+  var topOfOthDiv = $(".effetHide").offset().top;
+  $(window).scroll(function() {
+      if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+          $(".effetHi").show(); //reached the desired point -- show div
+      }
+  });
+});
+/*$(window).scroll(function() {
+      $(".space:hidden").show();
+});
+/*$(function () {
+  $(".effetHi").hide()
+  $(".space").scroll(function () {
     $(".effetHi").show()
   })
 
-});
+});*/
 $(function () {
   $(".effetHi1").hide()
-  $(".service").hover(function () {
+  $(".service").scroll(function () {
     $(".effetHi1").show()
   })
 
 });
 $(function () {
   $(".effetHi2").hide()
-  $(".tarifs").hover(function () {
+  $(".tarifs").scroll(function () {
     $(".effetHi2").show()
   })
 
@@ -126,4 +138,7 @@ $(function () {
   $(".serBanM").click(function () {
     $(".effetHi1").show();
   })
+});
+$(function () {
+  $('#datetimepicker1').datetimepicker();
 });

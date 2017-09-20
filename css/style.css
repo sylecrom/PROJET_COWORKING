@@ -76,7 +76,14 @@ font-family: 'Asap Condensed', sans-serif;
         margin: 0;
         position: left;
     }
-    
+    .ordif {
+        width: 100%;
+        position: absolute;
+        height: 150%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
     .ImageBan {
         padding: 10vh 0;
         width: 100%;
@@ -84,7 +91,7 @@ font-family: 'Asap Condensed', sans-serif;
     
     @media (max-width: 325px) {
         .ordi {
-            position: absolute;
+            position: relative;
             top: 25vh;
             Left: 3vw;
             width: 80vw;
@@ -94,7 +101,7 @@ font-family: 'Asap Condensed', sans-serif;
     
     @media (min-width: 326px) and (max-width:375px) {
         .ordi {
-            position: absolute;
+            position: relative;
             top: 35vh;
             Left: 10vw;
             width: 80vw;
@@ -104,8 +111,8 @@ font-family: 'Asap Condensed', sans-serif;
     
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         .ordi {
-            position: absolute;
-            bottom: -40vh;
+            position: relative;
+            top: 50vh;
             right: -54vw;
             width: 120vw;
             min-width: 500px;
@@ -114,7 +121,7 @@ font-family: 'Asap Condensed', sans-serif;
     
     @media (min-width: 376px) and (max-width:425px) {
         .ordi {
-            position: absolute;
+            position: relative;
             top: 35vh;
             Left: 15vw;
             width: 80vw;
@@ -124,8 +131,8 @@ font-family: 'Asap Condensed', sans-serif;
     
     @media (min-width: 426px) and (max-width:767px) {
         .ordi {
-            position: absolute;
-            bottom: -40vh;
+            position: relative;
+            top: 50vh;
             right: -40vw;
             width: 80vw;
             min-width: 500px;
@@ -134,8 +141,8 @@ font-family: 'Asap Condensed', sans-serif;
     
     @media (min-width: 768px) {
         .ordi {
-            position: absolute;
-            bottom: -40vh;
+            position: relative;
+            top: 30vh;
             right: -40vw;
             width: 90vw;
             min-width: 500px;
@@ -144,8 +151,8 @@ font-family: 'Asap Condensed', sans-serif;
     
     @media (min-width:992px) {
         .ordi {
-            position: absolute;
-            bottom: -40vh;
+            position: relative;
+            top: 40vh;
             right: -50vw;
             width: 90vw;
             min-width: 500px;
@@ -154,8 +161,8 @@ font-family: 'Asap Condensed', sans-serif;
     
     @media (min-width:1200px) {
         .ordi {
-            position: absolute;
-            bottom: -35vh;
+            position: relative;
+            top: 10vh;
             right: -55vw;
             width: 80vw;
             min-width: 500px;
@@ -164,7 +171,7 @@ font-family: 'Asap Condensed', sans-serif;
     
     .bouton {
         position: relative;
-        z-index: 999;
+        z-index: 9;
         height: 20%;
     }
     /* BACKGROUND COLORS & EFFECTS */
@@ -423,79 +430,6 @@ font-family: 'Asap Condensed', sans-serif;
         transition: opacity 0.3s, color 0.3s;
     }
     
-    .cn-wrapper li {
-        height: 3em;
-        width: 3em;
-    }
-    
-    .stylefg {
-        color: rgb(204, 204, 204);
-    }
-    
-    .stylefg input {
-        background-color: rgba(255, 255, 255, 0);
-        border-radius: 0px;
-        border-width: 2px;
-    }
-    
-    #Textarea {
-        background-color: rgba(255, 255, 255, 0);
-        border-radius: 0px;
-        border-width: 2px;
-    }
-    
-    .adresse {
-        font-size: 18px;
-        margin-right: 12px;
-    }
-    /**duree apparition des animation img**/
-    
-    .animated.zoomInUp {
-        animation-duration: 3s;
-        transition-property: all;
-    }
-    
-    img.animated.fadeInDown {
-        animation-duration: 3s;
-    }
-    
-    .animated.fadeInUp {
-        animation-duration: 2s;
-        animation-delay: 1s;
-    }
-    /* Overline From Left  apprition d'une barre au dessus des commandes accueil, espace,...*/
-    
-    .hvr-overline-from-left {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px transparent;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .hvr-overline-from-left:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        left: 0;
-        right: 100%;
-        top: 0;
-        background: #f9a02e;
-        height: 2px;
-        -webkit-transition-property: right;
-        transition-property: right;
-        -webkit-transition-duration: 0.8s;
-        transition-duration: 0.8s;
-        -webkit-transition-timing-function: ease-out;
-        transition-timing-function: ease-out;
-    }
-    
-    .hvr-overline-from-left:hover:before, .hvr-overline-from-left:focus:before, .hvr-overline-from-left:active:before {
-        right: 0;
-    }
-    
     i {
         margin-top: 20px;
         transform: scale(1.4);
@@ -568,6 +502,53 @@ font-family: 'Asap Condensed', sans-serif;
         font-size: 18px;
         margin-right: 12px;
     }
+    /**duree apparition des animation img**/
+    
+    .animated.zoomInUp {
+        animation-duration: 3s;
+        transition-property: all;
+    }
+    
+    img.animated.fadeInDown {
+        animation-duration: 3s;
+    }
+    
+    .animated.fadeInUp {
+        animation-duration: 2s;
+        animation-delay: 1s;
+    }
+    /* Overline From Left  apprition d'une barre au dessus des commandes accueil, espace,...*/
+    
+    .hvr-overline-from-left {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .hvr-overline-from-left:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        top: 0;
+        background: #f9a02e;
+        height: 2px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    
+    .hvr-overline-from-left:hover:before, .hvr-overline-from-left:focus:before, .hvr-overline-from-left:active:before {
+        right: 0;
+    }
     
     .grid {
         vertical-align: baseline;
@@ -620,12 +601,14 @@ font-family: 'Asap Condensed', sans-serif;
     .iconpers {
         position: absolute;
         top: -11px;
-        left: 40%;
+        left: 8px;
         text-align: left;
         padding: 4px 10px;
         background-color: white;
     }
-    
+    .horloge {
+        margin-top: 0px;
+    }
     .fleche {
         position: absolute;
         top: 17px;
