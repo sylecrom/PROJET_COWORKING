@@ -64,11 +64,11 @@ font-family: 'Asap Condensed', sans-serif;
         font-weight: 900;
     }
     
-    #service .title {
+    #services .title {
         color: white;
     }
     
-    #service .texte {
+    #services .texte {
         color: white;
         margin-top:10vh;
     }
@@ -272,13 +272,13 @@ font-family: 'Asap Condensed', sans-serif;
         background-color: rgba(61, 109, 139, 0.8);
     }
     
-    #espace {
+    #espaces {
         margin-top: 50px;
         padding-bottom: 60px;
         min-height: 100vh;
     }
     
-    #service {
+    #services {
         margin-top: 50px;
         padding-bottom: 60px;
         /*background-color: rgba(61, 109, 139, 0.5);*/
@@ -591,7 +591,7 @@ font-family: 'Asap Condensed', sans-serif;
         animation-duration: 2s;
         animation-delay: 1s;
     }
-    /* Overline From Left  apprition d'une barre au dessus des commandes accueil, espace,...*/
+    /* Overline From Left  apprition d'une barre au dessus des commandes accueil, espaces,...*/
     
     .hvr-overline-from-left {
         display: inline-block;
