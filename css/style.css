@@ -7,11 +7,6 @@ font-family: 'Asap Condensed', sans-serif;
 */
     /* MISE EN FORME GENERALE */
     
-    body, html {
-        overflow-x: hidden;
-        overflow-y: scroll !important;
-    }
-    
     section {
         text-align: center
     }
@@ -123,10 +118,17 @@ font-family: 'Asap Condensed', sans-serif;
         padding: 10vh 0;
         width: 100%;
     }
-    
+    .boxOrdi{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:150%;
+        overflow: hidden;
+    }
     @media (max-width: 325px) {
         .ordi {
-            position: absolute;
+            position: relative;
             top: 25vh;
             Left: 3vw;
             width: 80vw;
@@ -136,7 +138,7 @@ font-family: 'Asap Condensed', sans-serif;
     
     @media (min-width: 326px) and (max-width:375px) {
         .ordi {
-            position: absolute;
+            position: relative;
             top: 35vh;
             Left: 10vw;
             width: 80vw;
@@ -146,9 +148,9 @@ font-family: 'Asap Condensed', sans-serif;
     
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         .ordi {
-            position: absolute;
-            bottom: -40vh;
-            right: -54vw;
+            position: relative;
+            top: 35vh;
+            Left: 15vw;
             width: 120vw;
             min-width: 500px;
         }
@@ -156,7 +158,7 @@ font-family: 'Asap Condensed', sans-serif;
     
     @media (min-width: 376px) and (max-width:425px) {
         .ordi {
-            position: absolute;
+            position: relative;
             top: 35vh;
             Left: 15vw;
             width: 80vw;
@@ -166,9 +168,9 @@ font-family: 'Asap Condensed', sans-serif;
     
     @media (min-width: 426px) and (max-width:767px) {
         .ordi {
-            position: absolute;
-            bottom: -40vh;
-            right: -40vw;
+            position: relative;
+            top: 35vh;
+            Left: 15vw;
             width: 80vw;
             min-width: 500px;
         }
@@ -176,9 +178,9 @@ font-family: 'Asap Condensed', sans-serif;
     
     @media (min-width: 768px) {
         .ordi {
-            position: absolute;
-            bottom: -40vh;
-            right: -40vw;
+            position: relative;
+            top: 35vh;
+            Left: 15vw;
             width: 90vw;
             min-width: 500px;
         }
@@ -186,9 +188,9 @@ font-family: 'Asap Condensed', sans-serif;
     
     @media (min-width:992px) {
         .ordi {
-            position: absolute;
-            bottom: -40vh;
-            right: -50vw;
+            position: relative;
+            top: 35vh;
+            Left: 15vw;
             width: 90vw;
             min-width: 500px;
         }
@@ -196,9 +198,9 @@ font-family: 'Asap Condensed', sans-serif;
     
     @media (min-width:1200px) {
         .ordi {
-            position: absolute;
-            bottom: -35vh;
-            right: -55vw;
+            position: relative;
+            top: 35vh;
+            Left: 15vw;
             width: 80vw;
             min-width: 500px;
         }
@@ -363,6 +365,7 @@ font-family: 'Asap Condensed', sans-serif;
     
     .menu a:hover {
         color: #f9a02e;
+        text-decoration: none;
     }
     
     .menuBurger input:checked ~ ul {
