@@ -103,7 +103,7 @@ font-family: 'Asap Condensed', sans-serif;
     
     .placeholder {
         padding: 15px;
-        max-width: 28vh;
+        max-width: 35vh;
     }
     
     .logo {
@@ -114,23 +114,30 @@ font-family: 'Asap Condensed', sans-serif;
         position: left;
     }
     
+    .nomargin {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    
     .ImageBan {
         padding: 10vh 0;
         width: 100%;
     }
-    .boxOrdi{
+    
+    .boxOrdi {
         position: absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:150%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 750%;
         overflow: hidden;
     }
+    
     @media (max-width: 325px) {
         .ordi {
             position: relative;
             top: 25vh;
-            Left: 3vw;
+            Left: 10vw;
             width: 80vw;
             min-width: 500px;
         }
@@ -139,8 +146,8 @@ font-family: 'Asap Condensed', sans-serif;
     @media (min-width: 326px) and (max-width:375px) {
         .ordi {
             position: relative;
-            top: 35vh;
-            Left: 10vw;
+            top: 30vh;
+            Left: 20vw;
             width: 80vw;
             min-width: 500px;
         }
@@ -160,19 +167,19 @@ font-family: 'Asap Condensed', sans-serif;
         .ordi {
             position: relative;
             top: 35vh;
-            Left: 15vw;
+            Left: 25vw;
             width: 80vw;
-            min-width: 500px;
+            min-width: 550px;
         }
     }
     
     @media (min-width: 426px) and (max-width:767px) {
         .ordi {
             position: relative;
-            top: 35vh;
-            Left: 15vw;
+            top: 45vh;
+            Left: 40vw;
             width: 80vw;
-            min-width: 500px;
+            min-width: 650px;
         }
     }
     
@@ -180,7 +187,7 @@ font-family: 'Asap Condensed', sans-serif;
         .ordi {
             position: relative;
             top: 35vh;
-            Left: 15vw;
+            Left: 48vw;
             width: 90vw;
             min-width: 500px;
         }
@@ -190,7 +197,7 @@ font-family: 'Asap Condensed', sans-serif;
         .ordi {
             position: relative;
             top: 35vh;
-            Left: 15vw;
+            Left: 47vw;
             width: 90vw;
             min-width: 500px;
         }
@@ -200,7 +207,7 @@ font-family: 'Asap Condensed', sans-serif;
         .ordi {
             position: relative;
             top: 35vh;
-            Left: 15vw;
+            Left: 50vw;
             width: 80vw;
             min-width: 500px;
         }
