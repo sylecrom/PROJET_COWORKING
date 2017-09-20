@@ -8,7 +8,10 @@ font-family: 'Asap Condensed', sans-serif;
     /* MISE EN FORME GENERALE */
     
     section {
-        text-align: center
+        text-align: center;
+    }
+    .cesure{
+        hyphens:auto;        
     }
     
     row {
