@@ -78,45 +78,21 @@ $(document).ready(function () {
 /* effet hide show sur section*/
 $(document).ready( function() {
   $(".effetHi").hide()
-<<<<<<< HEAD
-  var topOfOthDiv = $(".effetHide").offset().top;
-  $(window).scroll(function() {
-      if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-          $(".effetHi").show(); //reached the desired point -- show div
-      }
-  });
-});
-/*$(window).scroll(function() {
-      $(".space:hidden").show();
-});
-/*$(function () {
-  $(".effetHi").hide()
-  $(".space").scroll(function () {
-=======
   $("#espace").mouseenter(function () {
->>>>>>> dev
     $(".effetHi").show()
   })
 
-});*/
+});
 $(function () {
   $(".effetHi1").hide()
-<<<<<<< HEAD
-  $(".service").scroll(function () {
-=======
   $("#service").mouseenter(function () {
->>>>>>> dev
     $(".effetHi1").show()
   })
 
 });
 $(function () {
   $(".effetHi2").hide()
-<<<<<<< HEAD
-  $(".tarifs").scroll(function () {
-=======
   $("#tarifs").mouseenter(function () {
->>>>>>> dev
     $(".effetHi2").show()
   })
 
@@ -156,11 +132,6 @@ $(function () {
     $(".effetHi1").show();
   })
 });
-<<<<<<< HEAD
-$(function () {
-  $('#datetimepicker1').datetimepicker();
-});
-=======
 
 /** apparition des sections à l'écran **/
 $(document).ready(function () {
@@ -178,4 +149,3 @@ $(document).ready(function () {
   });
 });
 
->>>>>>> dev

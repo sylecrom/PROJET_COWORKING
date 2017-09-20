@@ -134,23 +134,12 @@ font-family: 'Asap Condensed', sans-serif;
         margin: 0;
         position: left;
     }
-<<<<<<< HEAD
-    .ordif {
-        width: 100%;
-        position: absolute;
-        height: 150%;
-        top: 0;
-        left: 0;
-        overflow: hidden;
-    }
-=======
     
     .nomargin {
         margin-left: 0;
         padding-left: 0;
     }
     
->>>>>>> dev
     .ImageBan {
         padding: 10vh 0;
         width: 100%;
@@ -179,13 +168,8 @@ font-family: 'Asap Condensed', sans-serif;
     @media (min-width: 326px) and (max-width:375px) {
         .ordi {
             position: relative;
-<<<<<<< HEAD
-            top: 35vh;
-            Left: 10vw;
-=======
             top: 30vh;
             Left: 20vw;
->>>>>>> dev
             width: 80vw;
             min-width: 500px;
         }
@@ -194,13 +178,8 @@ font-family: 'Asap Condensed', sans-serif;
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         .ordi {
             position: relative;
-<<<<<<< HEAD
-            top: 50vh;
-            right: -54vw;
-=======
             top: 35vh;
             Left: 15vw;
->>>>>>> dev
             width: 120vw;
             min-width: 500px;
         }
@@ -219,13 +198,8 @@ font-family: 'Asap Condensed', sans-serif;
     @media (min-width: 426px) and (max-width:767px) {
         .ordi {
             position: relative;
-<<<<<<< HEAD
-            top: 50vh;
-            right: -40vw;
-=======
             top: 45vh;
             Left: 40vw;
->>>>>>> dev
             width: 80vw;
             min-width: 650px;
         }
@@ -234,13 +208,8 @@ font-family: 'Asap Condensed', sans-serif;
     @media (min-width: 768px) {
         .ordi {
             position: relative;
-<<<<<<< HEAD
-            top: 30vh;
-            right: -40vw;
-=======
             top: 35vh;
             Left: 48vw;
->>>>>>> dev
             width: 90vw;
             min-width: 500px;
         }
@@ -249,13 +218,8 @@ font-family: 'Asap Condensed', sans-serif;
     @media (min-width:992px) {
         .ordi {
             position: relative;
-<<<<<<< HEAD
-            top: 40vh;
-            right: -50vw;
-=======
             top: 35vh;
             Left: 47vw;
->>>>>>> dev
             width: 90vw;
             min-width: 500px;
         }
@@ -264,13 +228,8 @@ font-family: 'Asap Condensed', sans-serif;
     @media (min-width:1200px) {
         .ordi {
             position: relative;
-<<<<<<< HEAD
-            top: 10vh;
-            right: -55vw;
-=======
             top: 35vh;
             Left: 50vw;
->>>>>>> dev
             width: 80vw;
             min-width: 500px;
         }
@@ -550,8 +509,6 @@ font-family: 'Asap Condensed', sans-serif;
         transition: opacity 0.3s, color 0.3s;
     }
     
-<<<<<<< HEAD
-=======
     .cn-wrapper li:first-child {
         transform: rotate(-7.5deg) skew(25deg);
     }
@@ -667,130 +624,11 @@ font-family: 'Asap Condensed', sans-serif;
         right: 0;
     }
     
->>>>>>> dev
     i {
         margin-top: 20px;
         transform: scale(1.4);
     }
     
-<<<<<<< HEAD
-    .cn-wrapper li:first-child {
-        transform: rotate(-7.5deg) skew(25deg);
-    }
-    
-    .cn-wrapper li:nth-child(2) {
-        transform: rotate(57.5deg) skew(25deg);
-    }
-    
-    .cn-wrapper li:nth-child(3) {
-        transform: rotate(122.5deg) skew(25deg)
-    }
-    
-    @media screen and (max-width:480px) {
-        .cn-wrapper {
-            font-size: .68em;
-        }
-        .cn-button {
-            font-size: 1em;
-        }
-        .cn-wrapper li {
-            font-size: 1.52em;
-        }
-    }
-    
-    @media screen and (max-width:480px) {
-        .cn-wrapper {
-            font-size: .68em;
-        }
-        .cn-button {
-            font-size: 1em;
-        }
-        .cn-wrapper li {
-            font-size: 1.52em;
-        }
-    }
-    
-    @media screen and (max-width:320px) {
-        .cn-wrapper {
-            width: 15.15px;
-            margin-left: -7.5em;
-        }
-        .cn-wrapper li {
-            height: 3em;
-            width: 3em;
-        }
-    }
-    
-    .stylefg {
-        color: rgb(204, 204, 204);
-    }
-    
-    .stylefg input {
-        background-color: rgba(255, 255, 255, 0);
-        border-radius: 0px;
-        border-width: 2px;
-    }
-    
-    #Textarea {
-        background-color: rgba(255, 255, 255, 0);
-        border-radius: 0px;
-        border-width: 2px;
-    }
-    
-    .adresse {
-        font-size: 18px;
-        margin-right: 12px;
-    }
-    /**duree apparition des animation img**/
-    
-    .animated.zoomInUp {
-        animation-duration: 3s;
-        transition-property: all;
-    }
-    
-    img.animated.fadeInDown {
-        animation-duration: 3s;
-    }
-    
-    .animated.fadeInUp {
-        animation-duration: 2s;
-        animation-delay: 1s;
-    }
-    /* Overline From Left  apprition d'une barre au dessus des commandes accueil, espace,...*/
-    
-    .hvr-overline-from-left {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px transparent;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .hvr-overline-from-left:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        left: 0;
-        right: 100%;
-        top: 0;
-        background: #f9a02e;
-        height: 2px;
-        -webkit-transition-property: right;
-        transition-property: right;
-        -webkit-transition-duration: 0.8s;
-        transition-duration: 0.8s;
-        -webkit-transition-timing-function: ease-out;
-        transition-timing-function: ease-out;
-    }
-    
-    .hvr-overline-from-left:hover:before, .hvr-overline-from-left:focus:before, .hvr-overline-from-left:active:before {
-        right: 0;
-    }
-    
-=======
->>>>>>> dev
     .grid {
         vertical-align: baseline;
     }
