@@ -148,4 +148,3 @@ $(document).ready(function () {
     callbackFunction: function (elem, action) { }
   });
 });
-

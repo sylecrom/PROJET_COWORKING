@@ -22,6 +22,10 @@
     <script src="viewportchecker.js"></script>
     <script type='text/javascript' src='js/script.js'></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-xXzeJssKIUapiEmgMYSmwjY5dxobH88&callback=initMap"></script>
+    <!-- DATE PICKER -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
+    />
 </head>
 
 <body>
@@ -67,7 +71,7 @@
 
         </div>
     </div>
-    <!-- Bouton raccourcis -->
+    <!-- Bouton raccourcis 
     <div>
         <button class="cn-button" id="cn-button">+</button>
         <div class="cn-wrapper" id="cn-wrapper">
@@ -78,7 +82,7 @@
             </ul>
         </div>
         <div id="cn-overlay" class="cn-overlay cn-overlay"></div>
-    </div>
+    </div> -->
     <!-- ACCUEIL BANNIERE-->
     <section>
         <div id="banner" class="container-fluid tableau vignette">
@@ -209,119 +213,84 @@
     <section id="contact" class="container-fluid footerfr tableau">
         <div class="row">
             <div class="col-md-6 col-sm-12 formul">
-                <button data-toggle="modal" href="#infos" class="btn btn-primary resabut">Réserver</button>
-
-                <div class="modal" id="infos">
-
-                    <div class="modal-dialog">
-
-                        <div class="modal-content">
-
-                            <div class="modal-header">
-
-                                <button type="button" class="close" data-dismiss="modal">x</button>
-
-                                <h1 class="modal-title">Réservation</h1>
-
-                            </div>
-
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <h2 class="heading titreform">Détails</h2>
-                                    <div class="row">
-                                        <div class="col-sm-5">
-                                            <div class="controls">
-                                                <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
-                                                <label for="arrive" class="label-date indate"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrivée</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-5">
-                                            <div class="controls">
-                                                <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
-                                                <label for="depart" class="label-date indate"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Départ</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-5">
-                                            <div class="controls">
-                                                <!--<i class="fa fa-sort fleche"></i>-->
-                                                <select class="floatLabel labpers">
-                                                  <option value="blank"></option>
-                                                  <option value="1">1</option>
-                                                  <option value="2">2</option>
-                                                  <option value="3">3</option>
-                                                  <option value="4">4</option>
-                                                  <option value="5">5</option>
-                                                  <option value="6">6</option>
-                                                  <option value="7">7</option>
-                                                  <option value="8">8</option>
-                                                  <option value="9">9</option>
-                                                  <option value="10">10</option>
-                                                </select>
-                                                <label for="fruit" class="iconpers"><i class="fa fa-male lemale"></i>&nbsp;&nbsp;People</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-5">
-                                            <input type="checkbox" name="mycheckbox" id="mycheckbox" value="0" /><label>&nbsp;&nbsp;Salle de réunion</label>
-                                            <div id="mycheckboxdiv" style="display:none">
-                                                <div class="controls">
-                                                    <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
-                                                    <label for="depart" class="label-date indate"><i class="fa fa-calendar"></i></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="modal-footer">
-
-                                <button class="btn btn-info" data-dismiss="modal">Fermer</button>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
                 <div class="infoform">
-                    <div class="form-group stylefg">
-                        <label for="InputNom">Nom</label>
-                        <input type="text" class="form-control" id="InputNom" placeholder="Votre Nom">
-                    </div>
-                    <div class="form-group stylefg">
-                        <label for="InputPrenom">Prénom</label>
-                        <input type="password" class="form-control" id="InputPrenom" placeholder="Votre prénom">
+                    <h2 class="heading titreform">Réservation</h2>
+                    <div class="row">
+                        <div class="col-sm-6 form-group stylefg">
+                            <label for="InputNom">Nom</label>
+                            <input type="text" class="form-control" id="InputNom" placeholder="Votre Nom">
+                        </div>
+                        <div class="col-sm-6 form-group stylefg">
+                            <label for="InputPrenom">Prénom</label>
+                            <input type="text" class="form-control" id="InputPrenom" placeholder="Votre prénom">
+                        </div>
                     </div>
                     <div class="form-group stylefg">
                         <label for="InputEmail1">Adresse email</label>
                         <input type="email" class="form-control" id="InputEmail1" placeholder="email@internet.com">
                     </div>
-                    <div class="form-group stylefg">
-                        <label for="Textarea">Votre message</label>
-                        <textarea class="form-control" id="Textarea" rows="6" placeholder="n'hésitez à nous poser vos questions"></textarea>
+                    <div class="form-group styldate">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="controls arrive">
+                                    <input type="date" id="arrive" class="floatLabel">
+                                    <label for="arrive" class="label-date indate"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrivée</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="controls depart">
+                                    <input type="date" id="depart" class="floatLabel">
+                                    <label for="depart" class="label-date indate"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Départ</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="controls">
+                                    <!--<i class="fa fa-sort fleche"></i>-->
+                                    <select class="floatLabel labpers">
+                                          <option value="blank"></option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+                                          <option value="6">6</option>
+                                          <option value="7">7</option>
+                                          <option value="8">8</option>
+                                          <option value="9">9</option>
+                                          <option value="10">10</option>
+                                        </select>
+                                    <label for="fruit" class="iconpers"><i class="fa fa-male lemale"></i>&nbsp;&nbsp;Personnes</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="checkbox" name="mycheckbox" id="mycheckbox" value="0" /><label style="color: rgb(204, 204, 204)">&nbsp;&nbsp;Salle de réunion</label>
+                                <div id="mycheckboxdiv" style="display:none">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group stylefg">
+                            <label for="Textarea">Commentaires</label>
+                            <textarea class="form-control" id="Textarea" rows="6" placeholder="Informations supplémentaires / merci de préciser vos horaires de réunion"></textarea>
+                        </div>
+                        </form>
+                        <button data-toggle="modal" href="#infos" class="btn btn-primary resabut">Réserver</button>
                     </div>
-                    </form>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 formul">
                 <div id="map"></div>
                 <div class="infocont">
-                    <p><a target="_blank" href="https://goo.gl/maps/Bs3S4Tkf7TE2"><i class="fa fa-map-marker adresse" aria-hidden="true"></i></a>                        18 rue de la gare – 28240 La Loupe<br> L'espace de coworking se trouve au deuxième étage de la Wild
-                        Code School</p>
+                    <p><i class="fa fa-map-marker adresse" aria-hidden="true"></i><a target="_blank" href="https://goo.gl/maps/Bs3S4Tkf7TE2">18 rue de la gare – 28240 La Loupe</a><br>               L'espace de coworking se trouve au deuxième étage de la Wild Code School</p>
+                    <p><i class="fa fa-wheelchair adresse" aria-hidden="true"></i> Bâtiment accessible aux personnes à mobilité réduite</p>
                     <p><i class="fa fa-clock-o adresse" aria-hidden="true"></i> lundi au vendredi de 9h à 18h</p>
                     <p><i class="fa fa-phone adresse" aria-hidden="true"></i><a href="tel:+0619344237">06  19  34  42  37</a></p>
                     <p><i class="fa fa-paper-plane-o adresse" aria-hidden="true"></i><a class="" href="mailto:contact@coworkinglaloupe.fr:">contact@coworkinglaloupe.fr</a></p>
                 </div>
             </div>
         </div>
-        </div>
     </section>
-    <div class="container-fluid mentions">
-        <p>Mentions Légales</p>
-    </div>
 </body>
 
 </html>
