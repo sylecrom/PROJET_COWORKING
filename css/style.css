@@ -16,7 +16,7 @@ font-family: 'Asap Condensed', sans-serif;
 }
     /* MISE EN FORME GENERALE */
     .CacheMoi{
-        overflow-x: ;
+        overflow-x: hidden;
     }
     
     section {
