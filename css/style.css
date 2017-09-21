@@ -5,7 +5,12 @@ font-family: 'Abel', sans-serif;
 font-family: 'Exo', sans-serif;
 font-family: 'Asap Condensed', sans-serif;
 */
+
+
     /* MISE EN FORME GENERALE */
+    .CacheMoi{
+        overflow-x: hidden;
+    }
     
     section {
         text-align: center;
@@ -44,6 +49,11 @@ font-family: 'Asap Condensed', sans-serif;
         text-align: center;
     }
     /* TEXTES */
+    .price{
+        color: #e84130;
+        text-decoration: none;
+        font-weight: 900;
+    }
     
     .indent {
         text-indent: -10px;
@@ -475,6 +485,10 @@ font-family: 'Asap Condensed', sans-serif;
     .infocont a {
         color: rgb(204, 204, 204);
     }
+    .infocont a:hover{
+        color: #f9a02e;
+        text-decoration: none;
+    }
     
     .cn-wrapper {
         font-size: 1em;
@@ -602,13 +616,13 @@ font-family: 'Asap Condensed', sans-serif;
     .stylefg input {
         background-color: rgba(255, 255, 255, 0);
         border-radius: 0px;
-        border-width: 2px;
+        border-width: 1px;
     }
     
     #Textarea {
         background-color: rgba(255, 255, 255, 0);
         border-radius: 0px;
-        border-width: 2px;
+        border-width: 1px;
     }
     
     .adresse {
@@ -617,18 +631,21 @@ font-family: 'Asap Condensed', sans-serif;
     }
     /**duree apparition des animation img**/
     
-    .animated.zoomInUp {
-        animation-duration: 3s;
-        transition-property: all;
+    .animated.zoomIn {
+        animation-duration: 2s;
+        animation-delay: 0s;
+        
     }
     
     img.animated.fadeInDown {
-        animation-duration: 3s;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        
     }
     
     .animated.fadeInUp {
         animation-duration: 2s;
-        animation-delay: 1s;
+        animation-delay: 0.2s;
     }
     /* Overline From Left  apprition d'une barre au dessus des commandes accueil, espaces,...*/
     
@@ -677,6 +694,7 @@ font-family: 'Asap Condensed', sans-serif;
         text-align: left;
         position: relative;
     }
+
     
     .controls input {
         background-color: rgba(0, 0, 0, 0);
@@ -725,7 +743,7 @@ font-family: 'Asap Condensed', sans-serif;
     }
     
     .controls:hover {
-        color: #bdcc00;
+        color: #f0ad4e;
         cursor: text;
     }
     
@@ -760,6 +778,7 @@ font-family: 'Asap Condensed', sans-serif;
     .labpers {
         background-color: rgba(255, 255, 255, 0);
         margin-top: 10px;
+        border-radius: 0;        
     }
     
     .resabut {
