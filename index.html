@@ -1,159 +1,289 @@
 <!doctype html>
-<html>
+<html lang="fr">
 
 <head>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ESPACE COWORKING LA LOUPE by WILD CODE SCHOOL</title>
+    <!-- FEUILLES CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
         crossorigin="anonymous">
-    <title>ESPACE COWORKING LA LOUPE by WILD CODE SCHOOL</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Abel|Asap+Condensed|Exo|Josefin+Sans|Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- SCRIPT JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script type='text/javascript' src='js/script.js'></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-xXzeJssKIUapiEmgMYSmwjY5dxobH88&callback=initMap"></script>
+    <!-- DATE PICKER -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
+    />
 </head>
 
 <body>
     <!-- barre de navigation-->
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top barreNavColor">
         <div class="container">
-            <a class="navbar-brand animated bounce" href=""><img src="http://via.placeholder.com/50x50" alt="logo"></a>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#banner">ACCUEIL</a></li>
-                    <li><a href="#espace">ESPACE</a></li>
-                    <li><a href="#service">SERVICE</a></li>
-                    <li><a href="#tarifs">TARIFS</a></li>
+            <a class="navbar-brand animated bounce js-scrollTo" href="#banner"><img class="logo" src="css/img/LOGO.png" alt="logo"></a>
+            <div class="collapse navbar-collapse" id="menuText">
+                <ul class="nav navbar-nav navbar-right ">
+                    <li><a class="js-scrollTo hvr-overline-from-left" href="#accueil">ACCUEIL</a></li>
+                    <li><a class="js-scrollTo hvr-overline-from-left espaBan" href="#espaces">ESPACES</a></li>
+                    <li><a class="js-scrollTo hvr-overline-from-left serBan" href="#services">SERVICES</a></li>
+                    <li><a class="js-scrollTo hvr-overline-from-left tarifBan" href="#tarifs">TARIFS</a></li>
+                    <li><a class="js-scrollTo hvr-overline-from-left" href="#contact">RESERVER</a></li>
                 </ul>
             </div>
+            <!-- barre de navigation XS -->
+            <div class="menuBurger hidden-sm hidden-md hidden-lg">
+                <input type="checkbox" />
+
+                <span class="traitTop"></span>
+                <span class="traitMiddle"></span>
+                <span class="traitBottom"></span>
+
+                <ul class="menu">
+                    <a class="js-scrollTo" href="#accueil">
+                        <li>ACCUEIL</li>
+                    </a>
+                    <a class="js-scrollTo espaBanM" href="#espaces">
+                        <li>ESPACES</li>
+                    </a>
+                    <a class="js-scrollTo serBanM" href="#services">
+                        <li>SERVICES</li>
+                    </a>
+                    <a class="js-scrollTo tarifBanM" href="#tarifs">
+                        <li>TARIFS</li>
+                    </a>
+                    <a class="js-scrollTo" href="#contact">
+                        <li>RESERVER</li>
+                    </a>
+                </ul>
+            </div>
+
         </div>
     </div>
-
     <!-- ACCUEIL BANNIERE-->
     <section>
-        <div id="banner" class="container-fluid">
-            <div class="container">
-                <img class="animated zoomInUp" src="http://via.placeholder.com/250x250" alt="IMAGEetLOGOS">
-                <h1 class="">COWORKING LA LOUPE</h1>
-                <a class="btn btn-primary" href="#accueil" role="button">en savoir plus</a>
+        <div id="banner" class="container-fluid tableau vignette">
+            <div class="container banner">
+                <div class="col-md-11">
+                    <img class="ImageBan animated zoomInUp" src="css/img/LOGO.png" alt="LOGO">
+                    <!--h1 class="GrosTitre">COWORKING LA LOUPE</h1-->
+
+                    <a class="btn btn-warning bouton js-scrollTo" href="#accueil" role="button">en savoir plus</a>
+
+                </div>
+                <div class="boxOrdi">
+                    <img class="ordi" src="css/img/coffeeLaptop.png" alt="ordinateur">
+                </div>
             </div>
         </div>
     </section>
     <!-- ACCUEIL TEXT-->
     <section>
         <div id="accueil" class="container-fluid">
-            <div class="container">
-                <h1 class="">ACCUEIL</h1>
+            <div class="container center">
                 <div class "row">
-                    <div class="col-sm-6">
-                        <img class="animated fadeInDown" src="http://via.placeholder.com/250x250" alt="image de bureau">
-                    </div>
-                    <div class="col-sm-6">
-                        <p>Situé au pied de la gare, le « Coworking La Loupe » est un espace de travail partagé accessible
-                            à tous. Plus qu'un simple bureau, c'est un lieu de travail ouvert, destiné aux entrepreneurs
-                            indépendants, télétravailleurs et salariés itinérants. Il vous permet de travailler dans
-                            un bureau à un tarif raisonnable et de rencontrer et échanger avec des professionnels de divers
-                            horizons. Le lieu est porté par la Communauté de communes « Terres de Perche » et la Wild Code
-                            School, l’école de développeurs web.
+                    <!--div class="col-sm-6">
+                        <img class="ImageBan animated fadeInDown" src="css/img/ILLUSTRATION-250X250.png" alt="image de bureau">
+                    </div-->
+                    <div class="col-sm-9 texte">
+                        <h1 class="titleIntro">Situé au pied de la gare,</h1>
+                        <p class="texteIntro cesure"> le Coworking La Loupe est un espace de travail partagé accessible à tous.<br>Plus qu'un simple
+                            bureau, c'est un lieu de travail ouvert, destiné aux entrepreneurs indépendants, télétravailleurs
+                            et salariés itinérants.<br>Il vous permet de travailler dans un bureau à un tarif raisonnable
+                            et de rencontrer et échanger avec des professionnels de divers horizons.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="accueilbis" class="container-fluid">
+            <div class="container center">
+                <div class "row">
+                    <div class="texte">
+                        <p class="texteIntroBis cesure"> Le lieu est porté par la Communauté de communes «&nbsp;Terres de Perche&nbsp;» et la Wild Code
+                            School, l’école de développeurs web.
+                        </p>
+                        <img class="col-md-6 invert nomargin placeholder animated fadeInDown" src="css/img/logo_terre_de_perche.png" alt="logo">
+                        <img class="col-md-6 invert placeholder animated fadeInDown" src="css/img/logo_WCS.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- ESPACE -->
-    <section id="espace" class="container-fluid">
+    <!-- ESPACES -->
+    <section id="espaces" class="container-fluid">
         <div class="container">
-            <h1 class="">Venez travailler au Coworking La Loupe, vous y trouverez :</h1>
+            <h1 class="title space marges">Venez travailler au Coworking La Loupe, vous y trouverez&nbsp;:</h1>
             <div class="row">
                 <div class="col-sm-4">
-                    <img class="" src="http://via.placeholder.com/250x250" alt="image de bureau">
-                    <h1 class="">Open-Space</h1>
-                    <p class="">Une salle toute équipée de 35m2</p>
+                    <img class="placeholder animated fadeInDown" src="css/img/cowork.png" alt="image de bureau">
+                    <h1 class="title animated fadeInUp">Open-Space</h1>
+                    <p class="texte animated fadeInUp">Une salle toute équipée de 35m<sup>2</sup></p>
                 </div>
                 <div class="col-sm-4">
-                    <img class="" src="http://via.placeholder.com/250x250" alt="image de bureau">
-                    <h1 class="">Espace détente</h1>
-                    <p class="">Un espace de repos idéal pour les petites (ou grandes) pauses !</p>
+                    <img class="placeholder animated fadeInDown" src="css/img/canap.png" alt="image de bureau">
+                    <h1 class="title animated fadeInUp">Espace détente</h1>
+                    <p class="texte animated fadeInUp">Un espace de repos idéal pour les petites (ou grandes) pauses !</p>
                 </div>
                 <div class="col-sm-4">
-                    <img class="" src="http://via.placeholder.com/250x250" alt="image de bureau">
-                    <h1 class="">Salle de réunion</h1>
-                    <p class="">Pouvant accueillir 10 personnes, équipée pour la visioconférence</p>
+                    <img class="placeholder animated fadeInDown" src="css/img/meetroom.png" alt="image de bureau">
+                    <h1 class="title animated fadeInUp">Salle de réunion</h1>
+                    <p class="texte animated fadeInUp">Pouvant accueillir 10 personnes, équipée pour la visioconférence</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- SERVICE -->
-    <section id="service" class="container-fluid">
-        <div class="container">
-            <h1 class="">Afin de travailler dans les meilleurs conditions :</h1>
+    <section id="services" class="container-fluid">
+        <div class="container vcenter">
+            <h1 class="title service marges">Afin de travailler dans les meilleurs conditions&nbsp;:</h1>
             <div class="row">
                 <div class="col-sm-4">
-                    <img class="" src="http://via.placeholder.com/250x250" alt="image de bureau">
-                    <p class="">Connexion internet haut débit Wifi</p>
+                    <div class="IconBox">
+                        <img class="IconService animated fadeInDown" src="css/img/wifi.png" alt="image de bureau">
+                    </div>
+
+                    <p class="textservice animated fadeInUp">Connexion internet<br>haut débit Wifi<br></p>
                 </div>
                 <div class="col-sm-4">
-                    <img class="" src="http://via.placeholder.com/250x250" alt="image de bureau">
-                    <p class="">Imprimante / photocopieur / scan</p>
+                    <div class="IconBox">
+                        <img class="IconService animated fadeInDown" src="css/img/printer.png" alt="image de bureau">
+                    </div>
+
+                    <p class="textservice animated fadeInUp">Imprimante<br>photocopieur<br>scan</p>
                 </div>
                 <div class="col-sm-4">
-                    <img class="" src="http://via.placeholder.com/250x250" alt="image de bureau">
-                    <p class="">Espace déjeuner – cuisine équipée</p>
+                    <div class="IconBox">
+                        <img class="IconService animated fadeInDown" src="css/img/cook.png" alt="image de bureau">
+                    </div>
+
+                    <p class="textservice animated fadeInUp">Espace déjeuner<br>cuisine équipée</p>
                 </div>
+
             </div>
         </div>
     </section>
     <!-- TARIFS -->
     <section id="tarifs" class="container-fluid">
         <div class="container">
-            <h1 class="">TARIFS</h1>
-            <div class="row">
-                <div class="col-sm-4">
-                    <img class="" src="http://via.placeholder.com/250x250" alt="image de bureau">
-                    <h1 class="">QUOTIDIEN</h1>
-                    <h1 class="">10€</h1>
+            <h1 class="title tarifs marges">TARIFS</h1>
+            <div class="row apparition">
+                <div class="col-sm-4 paddingTop">
+                    <img class="placeholder shadow animated fadeInDown" src="css/img/week.png" alt="image de bureau">
+                    <h1 class="title animated fadeInUp">HEBDO<span class="semaine"><br><i class="soustext">(lundi>vendredi)</i></span></h1>
+                    <h1 class="textTarif animated fadeInUp">45€</h1>
                 </div>
-                <div class="col-sm-4">
-                    <img class="" src="http://via.placeholder.com/250x250" alt="image de bureau">
-                    <h1 class="">HEBDO<span class=""> (lundi>vendredi)</span></h1>
-                    <h1 class="">45€</h1>
+                <div class="col-sm-4 center paddingTop">
+                    <img class="placeholder2 shadow animated fadeInDown" src="css/img/day.png" alt="image de bureau">
+                    <h1 class="title animated fadeInUp">QUOTIDIEN<br>&nbsp;</h1>
+                    <h1 class="textTarif animated fadeInUp">10€</h1>
+
+
                 </div>
-                <div class="col-sm-4">
-                    <img class="" src="http://via.placeholder.com/250x250" alt="image de bureau">
-                    <h1 class="">QUOTIDIEN</h1>
-                    <h1 class="">10€</h1>
+                <div class="col-sm-4  paddingTop">
+                    <img class="placeholder shadow animated fadeInDown" src="css/img/month.png" alt="image de bureau" -->
+                    <h1 class="title animated fadeInUp">MENSUEL<br>&nbsp;</h1>
+                    <h1 class="textTarif animated fadeInUp">170€</h1>
                 </div>
             </div>
         </div>
     </section>
     <!-- FOOTER -->
-    <section id="contact" class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <form action="/action_page.php" method="get">
-                        <input type="text" name="prénom" placeholder="prénom"><br>
-                        <input type="text" name="nom" placeholder="nom"><br>
-                        <input type="text" name="mail" placeholder="mail"><br>
-                        <textarea name="text" id="usertext" cols="30" rows="10" placeholder="Bonjour, je souhaiterais réserver une place..."></textarea>
-                    </form>
-                </div>
-                <div class="col-sm-6">
-                    <div class "">
-                        <h1>EMBED GOOGLE MAP</h1>
-                    </div>
-                    <div class="">
-                        <a class="" href="https://goo.gl/maps/Bs3S4Tkf7TE2">18 rue de la gare – 28240 La Loupe</a><br>
-                        <a href="tel:+0619344237">06  19  34  42  37</a><br>
-                        <p class="">Du lundi au vendredi, de 9h à 18h</p>
-                        <a class="" href="contact@coworkinglaloupe.fr:">contact@coworkinglaloupe.fr</a><br>
+    <section id="contact" class="container-fluid footerfr tableau">
+        <h2 class="heading titreform">Réservation</h2>
 
+        <div class="row">
+            <div class="col-md-6 col-sm-12 formul">
+                <div class="infoform">
+                    <div class="row">
+                        <div class="col-sm-6 form-group stylefg">
+                            <label for="InputNom">Nom</label>
+                            <input type="text" class="form-control" id="InputNom" placeholder="Votre Nom">
+                        </div>
+                        <div class="col-sm-6 form-group stylefg">
+                            <label for="InputPrenom">Prénom</label>
+                            <input type="text" class="form-control" id="InputPrenom" placeholder="Votre prénom">
+                        </div>
+                    </div>
+                    <div class="form-group stylefg">
+                        <label for="InputEmail1">Adresse email</label>
+                        <input type="email" class="form-control" id="InputEmail1" placeholder="email@internet.com">
+                    </div>
+                    <div class="form-group styldate">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="controls arrive">
+                                    <input type="date" id="arrive" class="floatLabel">
+                                    <label for="arrive" class="label-date indate"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrivée</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="controls depart">
+                                    <input type="date" id="depart" class="floatLabel">
+                                    <label for="depart" class="label-date indate"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Départ</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="controls">
+                                    <!--<i class="fa fa-sort fleche"></i>-->
+                                    <select class="floatLabel labpers">
+                                          <option value="blank"></option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+                                          <option value="6">6</option>
+                                          <option value="7">7</option>
+                                          <option value="8">8</option>
+                                          <option value="9">9</option>
+                                          <option value="10">10</option>
+                                        </select>
+                                    <label for="fruit" class="iconpers"><i class="fa fa-male lemale"></i>&nbsp;&nbsp;Personnes</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="checkbox" name="mycheckbox" id="mycheckbox" value="0" /><label style="color: rgb(204, 204, 204)">&nbsp;&nbsp;Salle de réunion</label>
+                                <div id="mycheckboxdiv" style="display:none">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group stylefg">
+                            <label for="Textarea">Commentaires</label>
+                            <textarea class="form-control" id="Textarea" rows="6" placeholder="Informations supplémentaires / merci de préciser vos horaires de réunion"></textarea>
+                        </div>
+                        </form>
+                        <button data-toggle="modal" href="#infos" class="btn btn-primary resabut">Réserver</button>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
-                <p class="">Mentions Légales</p>
+            <div class="col-md-6 col-sm-12 formul pad">
+                <div id="map"></div>
+                <div class="infocont">
+                    <p class="indent"><i class="fa fa-map-marker adresse" aria-hidden="true"></i><a target="_blank" href="https://goo.gl/maps/Bs3S4Tkf7TE2">18 rue de la gare – 28240 La Loupe</a>
+                        <br>L'espace de coworking se trouve au deuxième étage de la Wild Code School</p>
+                    <p class="indent"><i class="fa fa-wheelchair adresse" aria-hidden="true"></i>Bâtiment accessible aux personnes à mobilité
+                        réduite
+                    </p>
+                    <p class="indent"><i class="fa fa-clock-o adresse" aria-hidden="true"></i>lundi au vendredi de 9h à 18h</p>
+                    <p class="indent"><i class="fa fa-phone adresse" aria-hidden="true"></i><a href="tel:+0619344237">06  19  34  42  37</a></p>
+                    <p class="indent"><i class="fa fa-paper-plane-o adresse" aria-hidden="true"></i><a class="" href="mailto:contact@coworkinglaloupe.fr:">contact@coworkinglaloupe.fr</a></p>
+                </div>
             </div>
         </div>
     </section>
 </body>
+
+</html>
