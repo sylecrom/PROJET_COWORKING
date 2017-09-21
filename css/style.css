@@ -5,10 +5,9 @@ font-family: 'Abel', sans-serif;
 font-family: 'Exo', sans-serif;
 font-family: 'Asap Condensed', sans-serif;
 */
-
-
     /* MISE EN FORME GENERALE */
-    .CacheMoi{
+    
+    .CacheMoi {
         overflow-x: hidden;
     }
     
@@ -49,7 +48,8 @@ font-family: 'Asap Condensed', sans-serif;
         text-align: center;
     }
     /* TEXTES */
-    .price{
+    
+    .price {
         color: #e84130;
         text-decoration: none;
         font-weight: 900;
@@ -485,7 +485,8 @@ font-family: 'Asap Condensed', sans-serif;
     .infocont a {
         color: rgb(204, 204, 204);
     }
-    .infocont a:hover{
+    
+    .infocont a:hover {
         color: #f9a02e;
         text-decoration: none;
     }
@@ -634,13 +635,11 @@ font-family: 'Asap Condensed', sans-serif;
     .animated.zoomIn {
         animation-duration: 2s;
         animation-delay: 0s;
-        
     }
     
     img.animated.fadeInDown {
         animation-duration: 2s;
         animation-delay: 0s;
-        
     }
     
     .animated.fadeInUp {
@@ -694,7 +693,6 @@ font-family: 'Asap Condensed', sans-serif;
         text-align: left;
         position: relative;
     }
-
     
     .controls input {
         background-color: rgba(0, 0, 0, 0);
@@ -778,7 +776,7 @@ font-family: 'Asap Condensed', sans-serif;
     .labpers {
         background-color: rgba(255, 255, 255, 0);
         margin-top: 10px;
-        border-radius: 0;        
+        border-radius: 0;
     }
     
     .resabut {

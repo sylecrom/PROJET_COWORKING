@@ -114,7 +114,7 @@ $(function () {
 
 
 /* APPARITION IN-VIEW */
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
   var $elem = $('.amagicFID');
   var $window = $(window);
   var docViewTop = $window.scrollTop();
@@ -127,7 +127,7 @@ $(window).on('scroll', function() {
 });
 
 
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
   var $elem = $('.emagicFID');
   var $window = $(window);
   var docViewTop = $window.scrollTop();
@@ -138,7 +138,7 @@ $(window).on('scroll', function() {
     $('.emagicFID').addClass('animated fadeInDown');
   }
 });
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
   var $elem = $('.emagicFIU');
   var $window = $(window);
   var docViewTop = $window.scrollTop();
@@ -151,7 +151,7 @@ $(window).on('scroll', function() {
 });
 
 
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
   var $elem = $('.smagicFID');
   var $window = $(window);
   var docViewTop = $window.scrollTop();
@@ -162,7 +162,7 @@ $(window).on('scroll', function() {
     $('.smagicFID').addClass('animated fadeInDown');
   }
 });
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
   var $elem = $('.smagicFIU');
   var $window = $(window);
   var docViewTop = $window.scrollTop();
@@ -175,7 +175,7 @@ $(window).on('scroll', function() {
 });
 
 
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
   var $elem = $('.tmagicFID');
   var $window = $(window);
   var docViewTop = $window.scrollTop();
@@ -186,7 +186,7 @@ $(window).on('scroll', function() {
     $('.tmagicFID').addClass('animated fadeInDown');
   }
 });
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
   var $elem = $('.tmagicFIU');
   var $window = $(window);
   var docViewTop = $window.scrollTop();
@@ -200,7 +200,7 @@ $(window).on('scroll', function() {
 
 
 
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
   var $elem = $('.fmagicSIL');
   var $window = $(window);
   var docViewTop = $window.scrollTop();
@@ -211,7 +211,7 @@ $(window).on('scroll', function() {
     $('.fmagicSIL').addClass('animated slideInLeft');
   }
 });
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
   var $elem = $('.fmagicSIR');
   var $window = $(window);
   var docViewTop = $window.scrollTop();
