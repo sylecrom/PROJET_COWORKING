@@ -6,14 +6,7 @@ font-family: 'Exo', sans-serif;
 font-family: 'Asap Condensed', sans-serif;
 */
 
-/* APPARITION */
 
-.magie{
-    visibility: hidden;
-}
-.magie.in-view{
-    visibility: visible;
-}
     /* MISE EN FORME GENERALE */
     .CacheMoi{
         overflow-x: hidden;
@@ -638,21 +631,21 @@ font-family: 'Asap Condensed', sans-serif;
     }
     /**duree apparition des animation img**/
     
-    .animated.zoomInUp {
+    .animated.zoomIn {
         animation-duration: 2s;
-        animation-delay: 0.5s;
+        animation-delay: 0s;
         
     }
     
     img.animated.fadeInDown {
         animation-duration: 2s;
-        animation-delay: 0.5s;
+        animation-delay: 0s;
         
     }
     
     .animated.fadeInUp {
-        animation-duration: 1.5s;
-        animation-delay: 0.5s;
+        animation-duration: 2s;
+        animation-delay: 0.2s;
     }
     /* Overline From Left  apprition d'une barre au dessus des commandes accueil, espaces,...*/
     
