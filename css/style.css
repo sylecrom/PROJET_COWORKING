@@ -30,10 +30,25 @@ font-family: 'Asap Condensed', sans-serif;
         }
     }
     
+    @media (max-width: 767px) {
+        .paddingTop {
+            padding-top: 15vh;
+        }
+    }
+    
+    .pad {
+        padding-top: 25px;
+    }
+    
     .center {
         text-align: center;
     }
     /* TEXTES */
+    
+    .indent {
+        text-indent: -10px;
+        padding-left: 25px;
+    }
     
     .navbar {
         color: white;
@@ -55,12 +70,18 @@ font-family: 'Asap Condensed', sans-serif;
         font-weight: 900;
     }
     
+    .soustext {
+        font-size: 2vh;
+        padding: 15px 0;
+        font-weight: 900;
+    }
+    
     .textservice {
         color: white;
         font-size: 4vh;
         padding: 40px 0;
         margin-top: 20vh;
-        margin-bottom: 20vh;
+        margin-bottom: 0vh;
     }
     
     .marges {
@@ -427,7 +448,7 @@ font-family: 'Asap Condensed', sans-serif;
     
     .footerfr {
         background-color: rgba(32, 37, 47, 0.90);
-        padding: 15px 30px;
+        padding: 5vh 30px;
     }
     
     .formul {
@@ -573,7 +594,7 @@ font-family: 'Asap Condensed', sans-serif;
     .stylefg {
         color: rgb(204, 204, 204);
     }
-
+    
     .styldate {
         margin-top: 40px;
     }
@@ -652,10 +673,11 @@ font-family: 'Asap Condensed', sans-serif;
     }
     
     .controls {
-        color : rgb(204, 204, 204);
+        color: rgb(204, 204, 204);
         text-align: left;
         position: relative;
     }
+    
     .controls input {
         background-color: rgba(0, 0, 0, 0);
         margin-bottom: 25px;
@@ -668,6 +690,7 @@ font-family: 'Asap Condensed', sans-serif;
         background-color: rgba(255, 255, 255, 0);
         padding: 4px 10px;
     }
+    
     .indate2 {
         position: absolute;
         top: -25px;
@@ -675,9 +698,11 @@ font-family: 'Asap Condensed', sans-serif;
         background-color: rgba(255, 255, 255, 0);
         padding: 4px 10px;
     }
+    
     #depart2 {
         margin-top: 20px;
     }
+    
     .indate i {
         margin-top: 0;
     }
@@ -717,7 +742,7 @@ font-family: 'Asap Condensed', sans-serif;
         left: 8px;
         text-align: left;
         padding: 4px 10px;
-        background-color:rgba(255, 255, 255, 0);
+        background-color: rgba(255, 255, 255, 0);
     }
     
     .fleche {
@@ -739,4 +764,5 @@ font-family: 'Asap Condensed', sans-serif;
     
     .resabut {
         margin-bottom: 20px;
+        margin-top: 15px;
     }
