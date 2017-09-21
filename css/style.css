@@ -623,13 +623,13 @@ font-family: 'Asap Condensed', sans-serif;
     .stylefg input {
         background-color: rgba(255, 255, 255, 0);
         border-radius: 0px;
-        border-width: 2px;
+        border-width: 1px;
     }
     
     #Textarea {
         background-color: rgba(255, 255, 255, 0);
         border-radius: 0px;
-        border-width: 2px;
+        border-width: 1px;
     }
     
     .adresse {
