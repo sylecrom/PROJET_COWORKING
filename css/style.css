@@ -5,7 +5,19 @@ font-family: 'Abel', sans-serif;
 font-family: 'Exo', sans-serif;
 font-family: 'Asap Condensed', sans-serif;
 */
+
+/* APPARITION */
+
+.magie{
+    visibility: hidden;
+}
+.magie.in-view{
+    visibility: visible;
+}
     /* MISE EN FORME GENERALE */
+    .CacheMoi{
+        overflow-x: ;
+    }
     
     section {
         text-align: center;
@@ -44,6 +56,11 @@ font-family: 'Asap Condensed', sans-serif;
         text-align: center;
     }
     /* TEXTES */
+    .price{
+        color: #e84130;
+        text-decoration: none;
+        font-weight: 900;
+    }
     
     .indent {
         text-indent: -10px;
@@ -475,6 +492,10 @@ font-family: 'Asap Condensed', sans-serif;
     .infocont a {
         color: rgb(204, 204, 204);
     }
+    .infocont a:hover{
+        color: #f9a02e;
+        text-decoration: none;
+    }
     
     .cn-wrapper {
         font-size: 1em;
@@ -618,17 +639,20 @@ font-family: 'Asap Condensed', sans-serif;
     /**duree apparition des animation img**/
     
     .animated.zoomInUp {
-        animation-duration: 3s;
-        transition-property: all;
+        animation-duration: 2s;
+        animation-delay: 0.5s;
+        
     }
     
     img.animated.fadeInDown {
-        animation-duration: 3s;
+        animation-duration: 2s;
+        animation-delay: 0.5s;
+        
     }
     
     .animated.fadeInUp {
-        animation-duration: 2s;
-        animation-delay: 1s;
+        animation-duration: 1.5s;
+        animation-delay: 0.5s;
     }
     /* Overline From Left  apprition d'une barre au dessus des commandes accueil, espaces,...*/
     
@@ -677,6 +701,7 @@ font-family: 'Asap Condensed', sans-serif;
         text-align: left;
         position: relative;
     }
+
     
     .controls input {
         background-color: rgba(0, 0, 0, 0);
@@ -725,7 +750,7 @@ font-family: 'Asap Condensed', sans-serif;
     }
     
     .controls:hover {
-        color: #bdcc00;
+        color: #f0ad4e;
         cursor: text;
     }
     
@@ -760,6 +785,7 @@ font-family: 'Asap Condensed', sans-serif;
     .labpers {
         background-color: rgba(255, 255, 255, 0);
         margin-top: 10px;
+        border-radius: 0;        
     }
     
     .resabut {

@@ -56,14 +56,14 @@ $(document).ready(function () {
 /* effet hide show sur section*/
 $(function () {
   $(".effetHi").hide()
-  $("#espace").mouseenter(function () {
+  $("#espaces").mouseenter(function () {
     $(".effetHi").show()
   })
 
 });
 $(function () {
   $(".effetHi1").hide()
-  $("#service").mouseenter(function () {
+  $("#services").mouseenter(function () {
     $(".effetHi1").show()
   })
 
@@ -109,4 +109,25 @@ $(function () {
   $(".serBanM").click(function () {
     $(".effetHi1").show();
   })
+});
+
+
+
+/* APPARITION CLASS MAGIE IN-VIEW */
+function isScrolledIntoView(elem) {
+  var docViewTop = $(window).scrollTop();
+  var docViewBottom = docViewTop + $(window).height();
+  var elemTop = $(elem).offset().top;
+  return ((elemTop <= docViewBottom));
+}
+
+$(window).scroll(function () {
+  $('.IconService').each(function () {
+      if (isScrolledIntoView(this) === true) {
+          $(this).addClass('animated')
+          $(this).addClass('fadeInDown')
+          
+      }
+  });
+
 });
