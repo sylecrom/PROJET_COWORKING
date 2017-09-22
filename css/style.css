@@ -169,6 +169,21 @@ font-family: 'Asap Condensed', sans-serif;
     
     .shadow {
         box-shadow: 2px 2px 15px rgba(136, 136, 136, 0.5);
+        transition: 0.7s;
+        
+    }
+    .essai:hover .shadow {
+        box-shadow: 20px 20px 50px rgba(136, 136, 136, 0.5);
+        transition: 0.7s;
+    }
+    .essai:hover {
+        transform: scale(1.1);
+        transition: 0.7s;
+        cursor: pointer;             
+    }
+    .essai{
+        transform: scale(1);
+        transition: 0.7s;
     }
     
     .logo {
@@ -645,6 +660,14 @@ font-family: 'Asap Condensed', sans-serif;
     .animated.fadeInUp {
         animation-duration: 2s;
         animation-delay: 0.2s;
+    }
+    .animated.slideInLeft {
+        animation-duration: 1.5s;
+        animation-delay: 0s;
+    }
+    .animated.slideInRight {
+        animation-duration: 1.5s;
+        animation-delay: 0s;
     }
     /* Overline From Left  apprition d'une barre au dessus des commandes accueil, espaces,...*/
     
