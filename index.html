@@ -200,42 +200,45 @@
         <h2 class="heading titreform">Réservation</h2>
 
         <div class="row">
-            <div class="col-md-6 col-sm-12 formul fmagicSIL">
-                <div class="infoform">
-                    <div class="row">
-                        <div class="col-sm-6 form-group stylefg">
-                            <label for="InputNom">Nom</label>
-                            <input type="text" class="form-control" id="InputNom" placeholder="Votre Nom">
-                        </div>
-                        <div class="col-sm-6 form-group stylefg">
-                            <label for="InputPrenom">Prénom</label>
-                            <input type="text" class="form-control" id="InputPrenom" placeholder="Votre prénom">
-                        </div>
-                    </div>
-                    <div class="form-group stylefg">
-                        <label for="InputEmail1">Adresse email</label>
-                        <input type="email" class="form-control" id="InputEmail1" placeholder="email@internet.com">
-                    </div>
-                    <div class="form-group styldate">
+
+            <form action="https://script.google.com/macros/s/AKfycbxx3xafcGhCOc0iC4vXdfwlGNFNsap0fknnMo9AoaXXkjy6f9M/exec" method="POST" enctype="multipart/form-data" name="résa coworking">
+
+                <div class="col-md-6 col-sm-12 formul fmagicSIL">
+                    <div class="infoform">
                         <div class="row">
-                            <div class="col-sm-6 col-xs-6">
-                                <div class="controls arrive">
-                                    <input type="date" id="arrive" class="floatLabel">
-                                    <label for="arrive" class="label-date indate"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrivée</label>
-                                </div>
+                            <div class="col-sm-6 form-group stylefg">
+                                <label for="InputNom">Nom</label>
+                                <input type="text" name="nom" class="form-control" id="InputNom" placeholder="Votre Nom">
                             </div>
-                            <div class="col-sm-6 col-xs-6">
-                                <div class="controls depart">
-                                    <input type="date" id="depart" class="floatLabel">
-                                    <label for="depart" class="label-date indate"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Départ</label>
-                                </div>
+                            <div class="col-sm-6 form-group stylefg">
+                                <label for="InputPrenom">Prénom</label>
+                                <input type="text" name="prénom"class="form-control" id="InputPrenom" placeholder="Votre prénom">
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="controls">
-                                    <!--<i class="fa fa-sort fleche"></i>-->
-                                    <select class="floatLabel labpers">
+                        <div class="form-group stylefg">
+                            <label for="InputEmail1">Adresse email</label>
+                            <input type="email" name="email" class="form-control" id="InputEmail1" placeholder="email@internet.com">
+                        </div>
+                        <div class="form-group styldate">
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-6">
+                                    <div class="controls arrive">
+                                        <input type="date" id="arrive" class="floatLabel" name="Arrivée">
+                                        <label for="arrive" class="label-date indate"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrivée</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-6">
+                                    <div class="controls depart">
+                                        <input type="date" id="depart" class="floatLabel" name="Départ">
+                                        <label for="depart" class="label-date indate"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Départ</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="controls">
+                                        <!--<i class="fa fa-sort fleche"></i>-->
+                                        <select class="floatLabel labpers" name="personnes">
                                           <option value="blank"></option>
                                           <option value="1">1</option>
                                           <option value="2">2</option>
@@ -248,24 +251,24 @@
                                           <option value="9">9</option>
                                           <option value="10">10</option>
                                         </select>
-                                    <label for="fruit" class="iconpers"><i class="fa fa-male lemale"></i>&nbsp;&nbsp;Personnes</label>
+                                        <label for="fruit" class="iconpers"><i class="fa fa-male lemale"></i>&nbsp;&nbsp;Personnes</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="checkbox" name="salle" id="mycheckbox" value="Oui" /><label style="color: rgb(204, 204, 204); margin-bottom: 25px;">&nbsp;&nbsp;Salle de réunion</label>
+                                    <div id="mycheckboxdiv" style="display:none">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <input type="checkbox" name="mycheckbox" id="mycheckbox" value="0" /><label style="color: rgb(204, 204, 204); margin-bottom: 25px;">&nbsp;&nbsp;Salle de réunion</label>
-                                <div id="mycheckboxdiv" style="display:none">
-                                </div>
+                            <div class="form-group stylefg">
+                                <label for="Textarea">Commentaires</label>
+                                <textarea class="form-control" id="Textarea" name="commentaires" rows="6" placeholder="Informations supplémentaires / merci de préciser vos horaires de réunion"></textarea>
                             </div>
+                            <input type="submit" class="btn btn-primary resabut" value="Réserver">
                         </div>
-                        <div class="form-group stylefg">
-                            <label for="Textarea">Commentaires</label>
-                            <textarea class="form-control" id="Textarea" rows="6" placeholder="Informations supplémentaires / merci de préciser vos horaires de réunion"></textarea>
-                        </div>
-                        </form>
-                        <button data-toggle="modal" href="#infos" class="btn btn-primary resabut">Réserver</button>
                     </div>
                 </div>
-            </div>
+            </form>
             <div class="col-md-6 col-sm-12 formul pad fmagicSIR">
                 <div id="map"></div>
                 <div class="infocont">
@@ -275,7 +278,7 @@
                         réduite
                     </p>
                     <p class="indent"><i class="fa fa-clock-o adresse" aria-hidden="true"></i>lundi au vendredi de 9h à 18h</p>
-                    <p class="indent"><a href="tel:+0619344237" ><i class="fa fa-phone adresse" aria-hidden="true"></i>06  19  34  42  37</a></p>
+                    <p class="indent"><a href="tel:+0619344237"><i class="fa fa-phone adresse" aria-hidden="true"></i>06  19  34  42  37</a></p>
                     <p class="indent"><a class="" href="mailto:contact@coworkinglaloupe.fr:"><i class="fa fa-paper-plane-o adresse" aria-hidden="true"></i>contact@coworkinglaloupe.fr</a></p>
                 </div>
             </div>

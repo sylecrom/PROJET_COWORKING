@@ -630,6 +630,7 @@ font-family: 'Asap Condensed', sans-serif;
     }
     
     .stylefg input {
+        color: rgb(204, 204, 204);                
         background-color: rgba(255, 255, 255, 0);
         border-radius: 0px;
         border-width: 1px;
@@ -799,7 +800,7 @@ font-family: 'Asap Condensed', sans-serif;
     .labpers {
         background-color: rgba(255, 255, 255, 0);
         margin-top: 10px;
-        border-radius: 0;
+        border-radius: 0px;
     }
     
     .resabut {
