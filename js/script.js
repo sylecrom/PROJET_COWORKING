@@ -56,7 +56,7 @@ $(document).ready(function () {
 
 /* APPEAR IN-VIEW */
 
-// if ($(window).width() > 568) {
+if ($(window).width() > 768) {
 $(window).on('scroll', function () {
   var $elem = $('.emagicFID');
   var $window = $(window);
@@ -160,8 +160,9 @@ $(window).on('scroll', function () {
     $('.fmagicSIR').addClass('animated slideInRight');
   }
 });
-//}
 */
+}
+
 
 // NO REFRESH AFTER FORM SUBMIT
 
