@@ -8,6 +8,7 @@ font-family: 'Asap Condensed', sans-serif;
     /* MISE EN FORME GENERALE */
     .visible{
         visibility: hidden;
+        transition: 0.7s;        
     }
     
     .CacheMoi {
