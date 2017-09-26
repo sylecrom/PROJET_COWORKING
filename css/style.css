@@ -674,27 +674,22 @@ font-family: 'Asap Condensed', sans-serif;
     
     .animated.zoomIn {
         animation-duration: 2s;
-        animation-delay: 0s;
     }
     
-    img.animated.fadeInDown {
+    animated.fadeInDown {
         animation-duration: 2s;
-        animation-delay: 0s;
     }
     
     .animated.fadeInUp {
         animation-duration: 2s;
-        animation-delay: 0.2s;
     }
     
     .animated.slideInLeft {
         animation-duration: 1.5s;
-        animation-delay: 0s;
     }
     
     .animated.slideInRight {
         animation-duration: 1.5s;
-        animation-delay: 0s;
     }
     /* Overline From Left  apprition d'une barre au dessus des commandes accueil, espaces,...*/
     
