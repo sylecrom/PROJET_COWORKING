@@ -49,9 +49,10 @@ font-family: 'Asap Condensed', sans-serif;
     }
     /* TEXTES */
     
-    #Textarea{
-        color:white;
+    #Textarea {
+        color: white;
     }
+    
     .price {
         color: #e84130;
         text-decoration: none;
@@ -123,11 +124,13 @@ font-family: 'Asap Condensed', sans-serif;
         text-align: center;
         text-justify: inter-word;
     }
+    
     @media (max-width: 768px) {
         .texte {
             font-size: 1.4em;
         }
     }
+    
     @media (max-width: 992px) {
         .texte {
             font-size: 1.6em;
@@ -183,18 +186,20 @@ font-family: 'Asap Condensed', sans-serif;
     .shadow {
         box-shadow: 2px 2px 15px rgba(136, 136, 136, 0.5);
         transition: 0.7s;
-        
     }
+    
     .essai:hover .shadow {
         box-shadow: 20px 20px 50px rgba(136, 136, 136, 0.5);
         transition: 0.7s;
     }
+    
     .essai:hover {
         transform: scale(1.1);
         transition: 0.7s;
-        cursor: pointer;             
+        cursor: pointer;
     }
-    .essai{
+    
+    .essai {
         transform: scale(1);
         transition: 0.7s;
     }
@@ -246,9 +251,8 @@ font-family: 'Asap Condensed', sans-serif;
             min-width: 500px;
         }
     }
-
     /* IPAD */
-
+    
     @media only screen and (device-width: 768px) {
         .ordi {
             position: relative;
@@ -259,7 +263,6 @@ font-family: 'Asap Condensed', sans-serif;
         }
     }
     
-
     @media (min-width: 376px) and (max-width:425px) {
         .ordi {
             position: relative;
@@ -334,13 +337,15 @@ font-family: 'Asap Condensed', sans-serif;
         padding-bottom: 60px;
         min-height: 100vh;
     }
-    #divaccueil{
+    
+    #divaccueil {
         min-height: 100vh;
-        top:-50px;
+        top: -50px;
     }
+    
     #accueil {
         margin-top: 50px;
-        margin-bottom : 20px;
+        margin-bottom: 20px;
         padding-bottom: 20px;
     }
     
@@ -649,7 +654,7 @@ font-family: 'Asap Condensed', sans-serif;
     }
     
     .stylefg input {
-        color: rgb(204, 204, 204);                
+        color: rgb(204, 204, 204);
         background-color: rgba(255, 255, 255, 0);
         border-radius: 0px;
         border-width: 1px;
@@ -681,10 +686,12 @@ font-family: 'Asap Condensed', sans-serif;
         animation-duration: 2s;
         animation-delay: 0.2s;
     }
+    
     .animated.slideInLeft {
         animation-duration: 1.5s;
         animation-delay: 0s;
     }
+    
     .animated.slideInRight {
         animation-duration: 1.5s;
         animation-delay: 0s;

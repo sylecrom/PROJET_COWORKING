@@ -126,117 +126,128 @@ $(function () {
   }
 }); */
 
-
-$(window).on('scroll', function () {
-  var $elem = $('.emagicFID');
-  var $window = $(window);
-  var docViewTop = $window.scrollTop();
-  var docViewBottom = docViewTop + $window.height();
-  var elemTop = $elem.offset().top;
-  var elemBottom = elemTop + $elem.height();
-  if (elemTop <= docViewBottom) {
-    $('.emagicFID').addClass('animated fadeInDown');
-  }
+$(document).ready(function () {
+  $(window).on('scroll', function () {
+    var $elem = $('.emagicFID');
+    var $window = $(window);
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+    if (elemTop <= docViewBottom) {
+      $('.emagicFID').addClass('animated fadeInDown');
+    }
+  });
 });
-$(window).on('scroll', function () {
-  var $elem = $('.emagicFIU');
-  var $window = $(window);
-  var docViewTop = $window.scrollTop();
-  var docViewBottom = docViewTop + $window.height();
-  var elemTop = $elem.offset().top;
-  var elemBottom = elemTop + $elem.height();
-  if (elemTop <= docViewBottom) {
-    $('.emagicFIU').addClass('animated fadeInUp');
-  }
-});
-
-
-$(window).on('scroll', function () {
-  var $elem = $('.smagicFID');
-  var $window = $(window);
-  var docViewTop = $window.scrollTop();
-  var docViewBottom = docViewTop + $window.height();
-  var elemTop = $elem.offset().top;
-  var elemBottom = elemTop + $elem.height();
-  if (elemTop <= docViewBottom) {
-    $('.smagicFID').addClass('animated fadeInDown');
-  }
-});
-$(window).on('scroll', function () {
-  var $elem = $('.smagicFIU');
-  var $window = $(window);
-  var docViewTop = $window.scrollTop();
-  var docViewBottom = docViewTop + $window.height();
-  var elemTop = $elem.offset().top;
-  var elemBottom = elemTop + $elem.height();
-  if (elemTop <= docViewBottom) {
-    $('.smagicFIU').addClass('animated fadeInUp');
-  }
+$(document).ready(function () {
+  $(window).on('scroll', function () {
+    var $elem = $('.emagicFIU');
+    var $window = $(window);
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+    if (elemTop <= docViewBottom) {
+      $('.emagicFIU').addClass('animated fadeInUp');
+    }
+  });
 });
 
-
-$(window).on('scroll', function () {
-  var $elem = $('.tmagicFID');
-  var $window = $(window);
-  var docViewTop = $window.scrollTop();
-  var docViewBottom = docViewTop + $window.height();
-  var elemTop = $elem.offset().top;
-  var elemBottom = elemTop + $elem.height();
-  if (elemTop <= docViewBottom) {
-    $('.tmagicFID').addClass('animated fadeInDown');
-  }
+$(document).ready(function () {
+  $(window).on('scroll', function () {
+    var $elem = $('.smagicFID');
+    var $window = $(window);
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+    if (elemTop <= docViewBottom) {
+      $('.smagicFID').addClass('animated fadeInDown');
+    }
+  });
 });
-$(window).on('scroll', function () {
-  var $elem = $('.tmagicFIU');
-  var $window = $(window);
-  var docViewTop = $window.scrollTop();
-  var docViewBottom = docViewTop + $window.height();
-  var elemTop = $elem.offset().top;
-  var elemBottom = elemTop + $elem.height();
-  if (elemTop <= docViewBottom) {
-    $('.tmagicFIU').addClass('animated fadeInUp');
-  }
-});
-
-
-
-$(window).on('scroll', function () {
-  var $elem = $('.fmagicSIL');
-  var $window = $(window);
-  var docViewTop = $window.scrollTop();
-  var docViewBottom = docViewTop + $window.height();
-  var elemTop = $elem.offset().top;
-  var elemBottom = elemTop + $elem.height();
-  if (elemTop <= docViewBottom) {
-    $('.fmagicSIL').addClass('animated slideInLeft');
-  }
-});
-$(window).on('scroll', function () {
-  var $elem = $('.fmagicSIR');
-  var $window = $(window);
-  var docViewTop = $window.scrollTop();
-  var docViewBottom = docViewTop + $window.height();
-  var elemTop = $elem.offset().top;
-  var elemBottom = elemTop + $elem.height();
-  if (elemTop <= docViewBottom) {
-    $('.fmagicSIR').addClass('animated slideInRight');
-  }
+$(document).ready(function () {
+  $(window).on('scroll', function () {
+    var $elem = $('.smagicFIU');
+    var $window = $(window);
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+    if (elemTop <= docViewBottom) {
+      $('.smagicFIU').addClass('animated fadeInUp');
+    }
+  });
 });
 
+$(document).ready(function () {
+  $(window).on('scroll', function () {
+    var $elem = $('.tmagicFID');
+    var $window = $(window);
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+    if (elemTop <= docViewBottom) {
+      $('.tmagicFID').addClass('animated fadeInDown');
+    }
+  });
+});
+$(document).ready(function () {
+  $(window).on('scroll', function () {
+    var $elem = $('.tmagicFIU');
+    var $window = $(window);
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+    if (elemTop <= docViewBottom) {
+      $('.tmagicFIU').addClass('animated fadeInUp');
+    }
+  });
+});
+
+
+$(document).ready(function () {
+  $(window).on('scroll', function () {
+    var $elem = $('.fmagicSIL');
+    var $window = $(window);
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+    if (elemTop <= docViewBottom) {
+      $('.fmagicSIL').addClass('animated slideInLeft');
+    }
+  });
+});
+$(document).ready(function () {
+  $(window).on('scroll', function () {
+    var $elem = $('.fmagicSIR');
+    var $window = $(window);
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+    if (elemTop <= docViewBottom) {
+      $('.fmagicSIR').addClass('animated slideInRight');
+    }
+  });
+});
 // NO REFRESH AFTER FORM SUBMIT
 
 $(document).ready(function () {
-  $('#prospects_form').on('submit',function (e) {
+  $('#prospects_form').on('submit', function (e) {
 
-            $.ajax({
-              type: 'post',
-              url: 'https://script.google.com/macros/s/AKfycbxx3xafcGhCOc0iC4vXdfwlGNFNsap0fknnMo9AoaXXkjy6f9M/exec',
-              success: function () {
-               alert("Email has been sent!");
-              }
-            });
-        e.preventDefault();
-      });
+    $.ajax({
+      type: 'post',
+      url: 'https://script.google.com/macros/s/AKfycbxx3xafcGhCOc0iC4vXdfwlGNFNsap0fknnMo9AoaXXkjy6f9M/exec',
+      success: function () {
+        alert("Email has been sent!");
+      }
+    });
+    e.preventDefault();
+  });
 });
 
 
