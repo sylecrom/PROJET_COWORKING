@@ -1,7 +1,14 @@
     /* GOOGLE FONTS
 font-family: 'Exo', sans-serif;
 */
+
+@font-face {
+    font-family: 'Exo', sans-serif;
+    src: url(font/Exo-Regular.ttf);
+}
     /* MISE EN FORME GENERALE */
+
+    
     
     .CacheMoi {
         overflow-x: hidden;
@@ -52,7 +59,7 @@ font-family: 'Exo', sans-serif;
     .price {
         color: #e84130;
         text-decoration: none;
-        font-weight: 900;
+        font-weight: 700;
     }
     
     .indent {
@@ -77,13 +84,13 @@ font-family: 'Exo', sans-serif;
     .title {
         font-size: 4vh;
         padding: 15px 0;
-        font-weight: 900;
+        font-weight: 600;
     }
     
     .soustext {
         font-size: 2vh;
         padding: 15px 0;
-        font-weight: 900;
+        font-weight: 600;
     }
     
     .textservice {
@@ -96,7 +103,7 @@ font-family: 'Exo', sans-serif;
     
     .marges {
         margin-bottom: 10vh;
-        font-weight: 900;
+        font-weight: 800;
     }
     
     #services .title {
@@ -112,7 +119,7 @@ font-family: 'Exo', sans-serif;
         text-align: left;
         font-size: 4vh;
         padding: 15px 0;
-        font-weight: 900;
+        font-weight: 600;
     }
     
     .texte {
