@@ -57,102 +57,111 @@ $(document).ready(function () {
 /* APPEAR IN-VIEW */
 
 // if ($(window).width() > 568) {
-  $(window).on('scroll', function () {
-    var $elem = $('.emagicFID');
-    var $window = $(window);
-    var docViewTop = $window.scrollTop();
-    var docViewBottom = docViewTop + $window.height();
-    var elemTop = $elem.offset().top;
-    var elemBottom = elemTop + $elem.height();
-    if (elemTop <= docViewBottom) {
-      $('.emagicFID').addClass('animated fadeInDown');
-    }
-  });
-  $(window).on('scroll', function () {
-    var $elem = $('.emagicFIU');
-    var $window = $(window);
-    var docViewTop = $window.scrollTop();
-    var docViewBottom = docViewTop + $window.height();
-    var elemTop = $elem.offset().top;
-    var elemBottom = elemTop + $elem.height();
-    if (elemTop <= docViewBottom) {
-      $('.emagicFIU').addClass('animated fadeInUp');
-    }
-  });
+$(window).on('scroll', function () {
+  var $elem = $('.emagicFID');
+  var $window = $(window);
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+  if (elemTop <= docViewBottom) {
+    $('.emagicFID').addClass('animated fadeInDown');
+    $('.emagicFIU').addClass('animated fadeInUp');
+  }
+});
+/*
+$(window).on('scroll', function () {
+  var $elem = $('.emagicFIU');
+  var $window = $(window);
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+  if (elemTop <= docViewBottom) {
+          $('.emagicFIU').addClass('animated fadeInUp');
 
-  $(window).on('scroll', function () {
-    var $elem = $('.smagicFID');
-    var $window = $(window);
-    var docViewTop = $window.scrollTop();
-    var docViewBottom = docViewTop + $window.height();
-    var elemTop = $elem.offset().top;
-    var elemBottom = elemTop + $elem.height();
-    if (elemTop <= docViewBottom) {
-      $('.smagicFID').addClass('animated fadeInDown');
-    }
-  });
-  $(window).on('scroll', function () {
-    var $elem = $('.smagicFIU');
-    var $window = $(window);
-    var docViewTop = $window.scrollTop();
-    var docViewBottom = docViewTop + $window.height();
-    var elemTop = $elem.offset().top;
-    var elemBottom = elemTop + $elem.height();
-    if (elemTop <= docViewBottom) {
-      $('.smagicFIU').addClass('animated fadeInUp');
-    }
-  });
+  }
+});
+*/
+$(window).on('scroll', function () {
+  var $elem = $('.smagicFID');
+  var $window = $(window);
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+  if (elemTop <= docViewBottom) {
+    $('.smagicFID').addClass('animated fadeInDown');
+    $('.smagicFIU').addClass('animated fadeInUp');
+  }
+});
+/*
+$(window).on('scroll', function () {
+  var $elem = $('.smagicFIU');
+  var $window = $(window);
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+  if (elemTop <= docViewBottom) {
+    $('.smagicFIU').addClass('animated fadeInUp');
+  }
+});
+*/
+
+$(window).on('scroll', function () {
+  var $elem = $('.tmagicFID');
+  var $window = $(window);
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+  if (elemTop <= docViewBottom) {
+    $('.tmagicFID').addClass('animated fadeInDown');
+    $('.tmagicFIU').addClass('animated fadeInUp');
+  }
+});
+/*
+$(window).on('scroll', function () {
+  var $elem = $('.tmagicFIU');
+  var $window = $(window);
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+  if (elemTop <= docViewBottom) {
+    $('.tmagicFIU').addClass('animated fadeInUp');
+  }
+});
+*/
 
 
-  $(window).on('scroll', function () {
-    var $elem = $('.tmagicFID');
-    var $window = $(window);
-    var docViewTop = $window.scrollTop();
-    var docViewBottom = docViewTop + $window.height();
-    var elemTop = $elem.offset().top;
-    var elemBottom = elemTop + $elem.height();
-    if (elemTop <= docViewBottom) {
-      $('.tmagicFID').addClass('animated fadeInDown');
-    }
-  });
-  $(window).on('scroll', function () {
-    var $elem = $('.tmagicFIU');
-    var $window = $(window);
-    var docViewTop = $window.scrollTop();
-    var docViewBottom = docViewTop + $window.height();
-    var elemTop = $elem.offset().top;
-    var elemBottom = elemTop + $elem.height();
-    if (elemTop <= docViewBottom) {
-      $('.tmagicFIU').addClass('animated fadeInUp');
-    }
-  });
-
-
-
-  $(window).on('scroll', function () {
-    var $elem = $('.fmagicSIL');
-    var $window = $(window);
-    var docViewTop = $window.scrollTop();
-    var docViewBottom = docViewTop + $window.height();
-    var elemTop = $elem.offset().top;
-    var elemBottom = elemTop + $elem.height();
-    if (elemTop <= docViewBottom) {
-      $('.fmagicSIL').addClass('animated slideInLeft');
-    }
-  });
-  $(window).on('scroll', function () {
-    var $elem = $('.fmagicSIR');
-    var $window = $(window);
-    var docViewTop = $window.scrollTop();
-    var docViewBottom = docViewTop + $window.height();
-    var elemTop = $elem.offset().top;
-    var elemBottom = elemTop + $elem.height();
-    if (elemTop <= docViewBottom) {
-      $('.fmagicSIR').addClass('animated slideInRight');
-    }
-  });
+$(window).on('scroll', function () {
+  var $elem = $('.fmagicSIL');
+  var $window = $(window);
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+  if (elemTop <= docViewBottom) {
+    $('.fmagicSIL').addClass('animated slideInLeft');
+    $('.fmagicSIR').addClass('animated slideInRight');
+  }
+});
+/*
+$(window).on('scroll', function () {
+  var $elem = $('.fmagicSIR');
+  var $window = $(window);
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+  if (elemTop <= docViewBottom) {
+    $('.fmagicSIR').addClass('animated slideInRight');
+  }
+});
 //}
-
+*/
 
 // NO REFRESH AFTER FORM SUBMIT
 
