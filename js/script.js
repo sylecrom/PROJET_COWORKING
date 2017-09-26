@@ -136,6 +136,7 @@ $(window).on('scroll', function () {
   var elemBottom = elemTop + $elem.height();
   if (elemTop <= docViewBottom) {
     $('.emagicFID').addClass('animated fadeInDown');
+    $('.visible').css('visibility', 'visible');        
   }
 });
 $(window).on('scroll', function () {
@@ -147,6 +148,7 @@ $(window).on('scroll', function () {
   var elemBottom = elemTop + $elem.height();
   if (elemTop <= docViewBottom) {
     $('.emagicFIU').addClass('animated fadeInUp');
+    $('.visible').css('visibility', 'visible');        
   }
 });
 
@@ -160,6 +162,7 @@ $(window).on('scroll', function () {
   var elemBottom = elemTop + $elem.height();
   if (elemTop <= docViewBottom) {
     $('.smagicFID').addClass('animated fadeInDown');
+    $('.visible').css('visibility', 'visible');
   }
 });
 $(window).on('scroll', function () {
@@ -171,6 +174,7 @@ $(window).on('scroll', function () {
   var elemBottom = elemTop + $elem.height();
   if (elemTop <= docViewBottom) {
     $('.smagicFIU').addClass('animated fadeInUp');
+    $('.visible').css('visibility', 'visible');    
   }
 });
 
@@ -184,6 +188,7 @@ $(window).on('scroll', function () {
   var elemBottom = elemTop + $elem.height();
   if (elemTop <= docViewBottom) {
     $('.tmagicFID').addClass('animated fadeInDown');
+    $('.visible').css('visibility', 'visible');        
   }
 });
 $(window).on('scroll', function () {
@@ -195,6 +200,7 @@ $(window).on('scroll', function () {
   var elemBottom = elemTop + $elem.height();
   if (elemTop <= docViewBottom) {
     $('.tmagicFIU').addClass('animated fadeInUp');
+    $('.visible').css('visibility', 'visible');        
   }
 });
 
@@ -209,6 +215,7 @@ $(window).on('scroll', function () {
   var elemBottom = elemTop + $elem.height();
   if (elemTop <= docViewBottom) {
     $('.fmagicSIL').addClass('animated slideInLeft');
+    $('.visible').css('visibility', 'visible');        
   }
 });
 $(window).on('scroll', function () {
@@ -220,6 +227,7 @@ $(window).on('scroll', function () {
   var elemBottom = elemTop + $elem.height();
   if (elemTop <= docViewBottom) {
     $('.fmagicSIR').addClass('animated slideInRight');
+    $('.visible').css('visibility', 'visible');        
   }
 });
 
