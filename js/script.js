@@ -53,78 +53,8 @@ $(document).ready(function () {
   });
 });
 
-/* effet hide show sur section*/
-$(function () {
-  $(".effetHi").hide()
-  $("#espaces").mouseenter(function () {
-    $(".effetHi").show()
-  })
-
-});
-$(function () {
-  $(".effetHi1").hide()
-  $("#services").mouseenter(function () {
-    $(".effetHi1").show()
-  })
-
-});
-$(function () {
-  $(".effetHi2").hide()
-  $("#tarifs").mouseenter(function () {
-    $(".effetHi2").show()
-  })
-
-
-});
-
-/** apparition des menus au clic cur nav desktop **/
-
-$(function () {
-  $(".tarifBan").click(function () {
-    $(".effetHi2").show();
-  })
-});
-$(function () {
-  $(".espaBan").click(function () {
-    $(".effetHi").show();
-  })
-});
-$(function () {
-  $(".serBan").click(function () {
-    $(".effetHi1").show();
-  })
-});
-/** apparition des menus au clic sur nav mobile **/
-$(function () {
-  $(".tarifBanM").click(function () {
-    $(".effetHi2").show();
-  })
-});
-$(function () {
-  $(".espaBanM").click(function () {
-    $(".effetHi").show();
-  })
-});
-$(function () {
-  $(".serBanM").click(function () {
-    $(".effetHi1").show();
-  })
-});
-
-
 
 /* APPARITION IN-VIEW */
-/*$(window).on('scroll', function () {
-  var $elem = $('.amagicFID');
-  var $window = $(window);
-  var docViewTop = $window.scrollTop();
-  var docViewBottom = docViewTop + $window.height();
-  var elemTop = $elem.offset().top;
-  var elemBottom = elemTop + $elem.height();
-  if (elemTop <= docViewBottom) {
-    $('.amagicFID').addClass('animated fadeInDown');
-  }
-}); */
 
 $(document).ready(function () {
   $(window).on('scroll', function () {
