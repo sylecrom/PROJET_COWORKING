@@ -56,6 +56,7 @@ $(document).ready(function () {
 
 /* APPARITION IN-VIEW */
 
+<<<<<<< HEAD
 $(document).ready(function () {
   $(window).on('scroll', function () {
     var $elem = $('.emagicFID');
@@ -163,6 +164,110 @@ $(document).ready(function () {
       $('.fmagicSIR').addClass('animated slideInRight');
     }
   });
+=======
+$(window).on('scroll', function () {
+  var $elem = $('.emagicFID');
+  var $window = $(window);
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+  if (elemTop <= docViewBottom) {
+    $('.emagicFID').addClass('animated fadeInDown');
+    $('.visible').css('visibility', 'visible');        
+  }
+});
+$(window).on('scroll', function () {
+  var $elem = $('.emagicFIU');
+  var $window = $(window);
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+  if (elemTop <= docViewBottom) {
+    $('.emagicFIU').addClass('animated fadeInUp');
+    $('.visible').css('visibility', 'visible');        
+  }
+});
+
+
+$(window).on('scroll', function () {
+  var $elem = $('.smagicFID');
+  var $window = $(window);
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+  if (elemTop <= docViewBottom) {
+    $('.smagicFID').addClass('animated fadeInDown');
+    $('.visible').css('visibility', 'visible');
+  }
+});
+$(window).on('scroll', function () {
+  var $elem = $('.smagicFIU');
+  var $window = $(window);
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+  if (elemTop <= docViewBottom) {
+    $('.smagicFIU').addClass('animated fadeInUp');
+    $('.visible').css('visibility', 'visible');    
+  }
+});
+
+
+$(window).on('scroll', function () {
+  var $elem = $('.tmagicFID');
+  var $window = $(window);
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+  if (elemTop <= docViewBottom) {
+    $('.tmagicFID').addClass('animated fadeInDown');
+    $('.visible').css('visibility', 'visible');        
+  }
+});
+$(window).on('scroll', function () {
+  var $elem = $('.tmagicFIU');
+  var $window = $(window);
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+  if (elemTop <= docViewBottom) {
+    $('.tmagicFIU').addClass('animated fadeInUp');
+    $('.visible').css('visibility', 'visible');        
+  }
+});
+
+
+
+$(window).on('scroll', function () {
+  var $elem = $('.fmagicSIL');
+  var $window = $(window);
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+  if (elemTop <= docViewBottom) {
+    $('.fmagicSIL').addClass('animated slideInLeft');
+    $('.visible').css('visibility', 'visible');        
+  }
+});
+$(window).on('scroll', function () {
+  var $elem = $('.fmagicSIR');
+  var $window = $(window);
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  var elemTop = $elem.offset().top;
+  var elemBottom = elemTop + $elem.height();
+  if (elemTop <= docViewBottom) {
+    $('.fmagicSIR').addClass('animated slideInRight');
+    $('.visible').css('visibility', 'visible');        
+  }
+>>>>>>> dev
 });
 // NO REFRESH AFTER FORM SUBMIT
 
