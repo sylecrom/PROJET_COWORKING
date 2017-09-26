@@ -56,8 +56,10 @@ $(document).ready(function () {
 
 /* APPEAR IN-VIEW */
 
-if ($(window).width() > 768) {
-$(window).on('scroll', function () {
+//if ($(window).width() > 768) {
+
+
+  $(window).on('scroll', function () {
   var $elem = $('.emagicFID');
   var $window = $(window);
   var docViewTop = $window.scrollTop();
@@ -161,7 +163,9 @@ $(window).on('scroll', function () {
   }
 });
 */
-}
+
+
+//}
 
 
 // NO REFRESH AFTER FORM SUBMIT
