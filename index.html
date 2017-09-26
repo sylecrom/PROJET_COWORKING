@@ -88,7 +88,7 @@
         </div>
     </section>
     <!-- ACCUEIL TEXT-->
-    <section>
+    <section id="divaccueil">
         <div id="accueil" class="container-fluid">
             <div class="container center">
                 <div class "row">
@@ -108,10 +108,10 @@
                 <div class "row">
                     <div class="texte">
                         <p class="texteIntroBis cesure"> Le lieu est porté par la Communauté de communes «&nbsp;Terres de Perche&nbsp;» et la Wild Code
-                            School, l’école de développeurs web.
+                            School, <span style="hyphens : none;">l’école</span> de développeurs web.
                         </p>
                         <img class="col-md-6 invert nomargin placeholder amagicFID" src="css/img/logo_terre_de_perche.png" alt="logo">
-                        <img class="col-md-6 invert placeholder amagicFID" src="css/img/logo_WCS.png" alt="logo">
+                        <img class="col-md-6 invert placeholder amagicFID" src="css/img/logo_WCS_2.png" alt="logo">
                     </div>
                 </div>
             </div>
@@ -122,20 +122,20 @@
         <div class="container">
             <h1 class="title space marges">Venez travailler au Coworking La Loupe, vous y trouverez&nbsp;:</h1>
             <div class="row effet Hi">
-                <div class="col-sm-4">
+                <div class="col-sm-4" style="margin-bottom:7vh;">
                     <img class="placeholder emagicFID" src="css/img/cowork.png" alt="image de bureau">
                     <h1 class="title emagicFIU">Open-Space</h1>
-                    <p class="texte emagicFIU">Une salle toute équipée de 35m<sup>2</sup></p>
+                    <p class="texte emagicFIU">Une salle toute équipée de&nbsp;35m<sup>2</sup></p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4" style="margin-bottom:7vh;">
                     <img class="placeholder emagicFID" src="css/img/canap.png" alt="image de bureau">
                     <h1 class="title emagicFIU">Espace détente</h1>
-                    <p class="texte emagicFIU">Un espace de repos idéal pour les petites (ou grandes) pauses !</p>
+                    <p class="texte emagicFIU">Un espace de repos idéal pour&nbsp;les petites <small>(ou&nbsp;grandes)</small>&nbsp;pauses&nbsp;!</p>
                 </div>
                 <div class="col-sm-4">
                     <img class="placeholder emagicFID" src="css/img/meetroom.png" alt="image de bureau">
                     <h1 class="title emagicFIU">Salle de réunion</h1>
-                    <p class="texte emagicFIU">Pouvant accueillir 10 personnes, équipée pour la visioconférence</p>
+                    <p class="texte emagicFIU">Pouvant accueillir 10&nbsp;personnes, équipée pour la&nbsp;visioconférence</p>
                 </div>
             </div>
         </div>
@@ -200,8 +200,9 @@
         <h2 class="heading titreform">Réservation</h2>
 
         <div class="row">
-
-            <form action="https://script.google.com/macros/s/AKfycbxx3xafcGhCOc0iC4vXdfwlGNFNsap0fknnMo9AoaXXkjy6f9M/exec" method="POST" enctype="multipart/form-data" name="résa coworking">
+<!-- lien formulaire : https://script.google.com/macros/s/AKfycbxx3xafcGhCOc0iC4vXdfwlGNFNsap0fknnMo9AoaXXkjy6f9M/exec -->
+<!-- onSubmit="alert('Votre demande de réservation a bien été prise en compte, merci.');" -->
+            <form id="prospects_form" method="POST" enctype="multipart/form-data" name="résa coworking" onsubmit="">
 
                 <div class="col-md-6 col-sm-12 formul fmagicSIL">
                     <div class="infoform">

@@ -114,7 +114,7 @@ $(function () {
 
 
 /* APPARITION IN-VIEW */
-$(window).on('scroll', function () {
+/*$(window).on('scroll', function () {
   var $elem = $('.amagicFID');
   var $window = $(window);
   var docViewTop = $window.scrollTop();
@@ -124,7 +124,7 @@ $(window).on('scroll', function () {
   if (elemTop <= docViewBottom) {
     $('.amagicFID').addClass('animated fadeInDown');
   }
-});
+}); */
 
 
 $(window).on('scroll', function () {
@@ -222,3 +222,21 @@ $(window).on('scroll', function () {
     $('.fmagicSIR').addClass('animated slideInRight');
   }
 });
+
+// NO REFRESH AFTER FORM SUBMIT
+
+$(document).ready(function () {
+  $('#prospects_form').on('submit',function (e) {
+
+            $.ajax({
+              type: 'post',
+              url: 'https://script.google.com/macros/s/AKfycbxx3xafcGhCOc0iC4vXdfwlGNFNsap0fknnMo9AoaXXkjy6f9M/exec',
+              success: function () {
+               alert("Email has been sent!");
+              }
+            });
+        e.preventDefault();
+      });
+});
+
+

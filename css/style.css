@@ -49,6 +49,9 @@ font-family: 'Asap Condensed', sans-serif;
     }
     /* TEXTES */
     
+    #Textarea{
+        color:white;
+    }
     .price {
         color: #e84130;
         text-decoration: none;
@@ -119,6 +122,16 @@ font-family: 'Asap Condensed', sans-serif;
         font-size: 1.8em;
         text-align: center;
         text-justify: inter-word;
+    }
+    @media (max-width: 768px) {
+        .texte {
+            font-size: 1.4em;
+        }
+    }
+    @media (max-width: 992px) {
+        .texte {
+            font-size: 1.6em;
+        }
     }
     
     .texteIntro {
@@ -233,8 +246,10 @@ font-family: 'Asap Condensed', sans-serif;
             min-width: 500px;
         }
     }
-    
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /* IPAD */
+
+    @media only screen and (device-width: 768px) {
         .ordi {
             position: relative;
             top: 35vh;
@@ -244,6 +259,7 @@ font-family: 'Asap Condensed', sans-serif;
         }
     }
     
+
     @media (min-width: 376px) and (max-width:425px) {
         .ordi {
             position: relative;
@@ -318,15 +334,18 @@ font-family: 'Asap Condensed', sans-serif;
         padding-bottom: 60px;
         min-height: 100vh;
     }
-    
+    #divaccueil{
+        min-height: 100vh;
+        top:-50px;
+    }
     #accueil {
         margin-top: 50px;
-        padding-bottom: 10px;
+        margin-bottom : 20px;
+        padding-bottom: 20px;
     }
     
     #accueilbis {
         padding-top: 50px;
-        margin-top: 50px;
         padding-bottom: 60px;
         background-color: rgba(61, 109, 139, 0.8);
     }
