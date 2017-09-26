@@ -6,7 +6,7 @@ font-family: 'Exo', sans-serif;
 font-family: 'Asap Condensed', sans-serif;
 */
     /* MISE EN FORME GENERALE */
-    .visible{
+    .apparition{
         visibility: hidden;
         transition: 0.7s;        
     }
@@ -170,8 +170,8 @@ font-family: 'Asap Condensed', sans-serif;
         position: absolute;
         top: -99px;
         bottom: -99px;
-        left: -9999px;
-        right: -9999px;
+        left: -99px;
+        right: -99px;
         margin: auto;
         max-width: 50vh;
     }
