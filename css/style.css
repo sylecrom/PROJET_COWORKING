@@ -15,6 +15,9 @@ font-family: 'Exo', sans-serif;
 
     /* MISE EN FORME GENERALE */
     
+    img{
+        -webkit-backface-visibility: hidden;
+    }
     .CacheMoi {
         overflow-x: hidden;
     }
