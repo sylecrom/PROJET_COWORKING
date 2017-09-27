@@ -56,7 +56,7 @@ $(document).ready(function () {
 
 /* APPEAR IN-VIEW */
 
-//if ($(window).width() > 768) {
+if ($(window).width() > 768) {
 
 
   $(window).on('scroll', function () {
@@ -164,8 +164,7 @@ $(window).on('scroll', function () {
 });
 */
 
-
-//}
+}
 
 
 // NO REFRESH AFTER FORM SUBMIT
