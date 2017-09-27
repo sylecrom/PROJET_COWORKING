@@ -15,10 +15,7 @@ font-family: 'Exo', sans-serif;
 
     /* MISE EN FORME GENERALE */
     
-    img{
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
-    }
+   
     .CacheMoi {
         overflow-x: hidden;
     }
@@ -85,8 +82,7 @@ font-family: 'Exo', sans-serif;
     }
     
     body {
-        transform:  translate3d(0, 0, 0);
-        -webkit-transform: translate3d(0, 0, 0);        
+     
         font-family: 'Exo', sans-serif;
         width: 100%;
         background-color: #fffef2;
