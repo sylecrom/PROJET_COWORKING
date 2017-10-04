@@ -15,14 +15,7 @@
     <!--link href="https://fonts.googleapis.com/css?family=Exo&amp;subset=latin-ext" rel="stylesheet"-->
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- SCRIPT JAVASCRIPT -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <script type='text/javascript' src='js/script.js'></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-xXzeJssKIUapiEmgMYSmwjY5dxobH88&callback=initMap"></script>
-    <!-- DATE PICKER -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+ 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
     />
 </head>
@@ -202,7 +195,7 @@
         <div class="row">
             <!-- lien formulaire : https://script.google.com/macros/s/AKfycbxx3xafcGhCOc0iC4vXdfwlGNFNsap0fknnMo9AoaXXkjy6f9M/exec -->
             <!-- onSubmit="alert('Votre demande de réservation a bien été prise en compte, merci.');" -->
-            <form id="prospects_form" method="POST" enctype="multipart/form-data" name="résa coworking" onsubmit="">
+            <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzAgpierzLsVPt-b9zdpUEHaXmmUs9LF_G1XwBIPUCucoqqrh00/exec">
 
                 <div class="col-md-6 col-sm-12 formul fmagicSIL">
                     <div class="infoform">
@@ -219,6 +212,8 @@
                         <div class="form-group stylefg">
                             <label for="InputEmail1">Adresse email</label>
                             <input type="email" name="email" class="form-control" id="InputEmail1" placeholder="email@internet.com">
+                            <span id="email-invalid" style="display:none">
+                                veuillez indiquer un email valide</span>
                         </div>
                         <div class="form-group styldate">
                             <div class="row">
@@ -265,11 +260,32 @@
                                 <label for="Textarea">Commentaires</label>
                                 <textarea class="form-control" id="Textarea" name="commentaires" rows="6" placeholder="Informations supplémentaires / merci de préciser vos horaires de réunion"></textarea>
                             </div>
-                            <input type="submit" class="btn btn-primary resabut" value="Réserver">
+                            <div id="boutonRésa">
+                                <input type="submit" class="btn btn-primary resabut" value="Réserver">
+                            </div>
+                            <div style="display:none;" id="thankyou_message">
+                                <h2 class="merci">Merci<br>Votre demande a été envoyé!</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
             </form>
+
+            <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+
+
+   <!-- SCRIPT JAVASCRIPT -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+       crossorigin="anonymous"></script>
+   <script type='text/javascript' src='js/script.js'></script>
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-xXzeJssKIUapiEmgMYSmwjY5dxobH88&callback=initMap"></script>
+   <!-- DATE PICKER -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+
+
+
+
             <div class="col-md-6 col-sm-12 formul pad fmagicSIR">
                 <div id="map"></div>
                 <div class="infocont">
@@ -280,7 +296,7 @@
                     </p>
                     <p class="indent"><i class="fa fa-clock-o adresse" aria-hidden="true"></i>lundi au vendredi de 9h à 18h</p>
                     <p class="indent"><a href="tel:+0619344237"><i class="fa fa-phone adresse" aria-hidden="true"></i>06  19  34  42  37</a></p>
-                    <p class="indent"><a class="" href="mailto:contact@coworkinglaloupe.fr:"><i class="fa fa-paper-plane-o adresse" aria-hidden="true"></i>contact@coworkinglaloupe.fr</a></p>
+                    <p class="indent"><a class="" href="mailto:coworking@wildcodeschool.fr:"><i class="fa fa-paper-plane-o adresse" aria-hidden="true"></i>coworking@wildcodeschool.fr</a></p>
                 </div>
             </div>
         </div>
