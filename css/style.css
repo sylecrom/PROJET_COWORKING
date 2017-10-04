@@ -286,10 +286,10 @@ font-family: 'Exo', sans-serif;
     @media (min-width: 426px) and (max-width:767px) {
         .ordi {
             position: relative;
-            top: 45vh;
-            Left: 40vw;
-            width: 80vw;
-            min-width: 650px;
+            top: 38vh;
+            right: -47vw;
+            width: 34vw;
+            min-width: 500px;
         }
     }
     
