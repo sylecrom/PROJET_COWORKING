@@ -1,8 +1,7 @@
     /* GOOGLE FONTS
 font-family: 'Exo', sans-serif;
 */
-    
-/*
+    /*
     @font-face {
         font-family: 'Exo', sans-serif;
         src: url('fonts/Exo-Regular.eot');
@@ -16,6 +15,15 @@ font-family: 'Exo', sans-serif;
     */
     /* MISE EN FORME GENERALE */
     
+    .lien {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    .lien:hover {
+        color: #98afc2;
+        text-decoration: none;
+    } 
     .CacheMoi {
         overflow-x: hidden;
     }
@@ -315,7 +323,17 @@ font-family: 'Exo', sans-serif;
     @media (min-width:1200px) {
         .ordi {
             position: relative;
-            top: 30vh;
+            top: 25vh;
+            Left: 50vw;
+            width: 80vw;
+            min-width: 500px;
+        }
+    }
+    
+    @media (min-width:1441px) {
+        .ordi {
+            position: relative;
+            top: 15vh;
             Left: 50vw;
             width: 80vw;
             min-width: 500px;
