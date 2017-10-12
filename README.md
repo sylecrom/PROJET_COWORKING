@@ -1,6 +1,6 @@
 # PROJET_COWORKING
 site de l'espace de coworking
-
+````
 
 Script GOOGLE pour l'envoi du formulaire de réservation par mail via l'API :
 
@@ -88,3 +88,6 @@ function record_data(e) {
   }
 
 }
+
+
+````
