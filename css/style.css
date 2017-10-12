@@ -15,6 +15,14 @@ font-family: 'Exo', sans-serif;
     */
     /* MISE EN FORME GENERALE */
     
+    #depart::-webkit-inner-spin-button {
+        display: none;
+    }
+    
+    #arrive::-webkit-inner-spin-button {
+        display: none;
+    }
+    
     .lien {
         color: #ffffff;
         text-decoration: none;
@@ -23,7 +31,8 @@ font-family: 'Exo', sans-serif;
     .lien:hover {
         color: #98afc2;
         text-decoration: none;
-    } 
+    }
+    
     .CacheMoi {
         overflow-x: hidden;
     }
